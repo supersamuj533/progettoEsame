@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #06b0da;
+}
+
+.sfondo {
+    position: absolute;
+    top: 50px;
+    left: 550px ;
+height: 60%;
+width: 30%;
+background-color: rgb(255, 255, 255);
+border-radius: 15px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 13px;
+    left: 40% ;
+   width: 8%;
+   height:25%;
+}
+.text1{
+    font-size:180%;
+font-weight: bold;
+position: absolute;
+left: 15px ;
+top: 100px;
+font-style: verdana;
+text-align: right;
+}
+.text2{
+    font-size:100%;
+    font-weight: bold;
+    position: absolute;
+    left: 15px ;
+    top: 145px;
+    font-style: verdana;
+}
+.text3{
+    font-size:100%;
+    position: absolute;
+    top: 160px;
+    left: 15px ;
+    font-style: verdana;
+}
+.text4{
+    font-size:100%;
+    font-weight: bold;
+    position: absolute;
+    left: 15px ;
+    top: 245px;
+    font-style: verdana;
+}
+.text5{
+    font-size:100%;
+    position: absolute;
+    top: 260px;
+    left: 15px ;
+    font-style: verdana;
+}
+
+.accedi{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+    height:30px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 70% ;
+    text-align: center;
+}
+.checkbox{
+    font-size:100%;
+    position: absolute;
+    top: 165px;
+    left: 440px ;
+    font-style: verdana;  
+}
+.checkbox2{
+    font-size:100%;
+    position: absolute;
+    top: 275px;
+    left: 440px ;
+    font-style: verdana;  
+}
+.x{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15px;
+    left: 5% ;
+}
+a {
+    text-decoration: none;
+    color: #06b0da;
+  font-size: 30px;
+  }
+  .errore{
+      color: red;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size:100%;
+      position: absolute;
+      top: 375px;
+      left: 20px ;
+  }

@@ -1,0 +1,272 @@
+.sinistra{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 7% ;
+   width: 20%;
+   height:90%;
+   
+}
+
+.botton1{
+    background-color: #ffffff;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+}
+
+.botton2{
+    background-color: #ffffff;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+}
+
+.botton3{
+    background-color: #ffffff;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+}
+
+.botton4{
+    background-color: #ffffff;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+}
+
+.botton5{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+}
+
+
+.botton6:active{ color: #06b0da; }
+.botton1:hover{
+    background-color: #b8effd;
+    color: #06b0da;
+}
+.botton2:hover{
+    background-color: #b8effd;
+    color: #06b0da;
+}
+.botton3:hover{
+    background-color: #b8effd;
+    color: #06b0da;
+}
+.botton4:hover{
+    background-color: #b8effd;
+    color: #06b0da;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 5% ;
+   width: 10%;
+   height:30%;
+}
+.centro{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 27% ;
+   width: 40%;
+   height:100%;
+  
+  
+}
+.ric{ display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height:58%;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2%;
+   width: 100%;
+   height:7%;
+   font-family: monospace;
+   font-size: 15px;
+   font-weight: bolder;
+   border: 1px solid #4e4e4e;
+   
+}
+.twitteButton{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0%;
+    top:75% ;
+    z-index: 1;
+   height:15%;
+   width: 90px;
+   background-color: #06b0da;
+   transition: background-color .5s;
+   border-radius: 15px;
+   text-transform: uppercase;
+   color: #000000;
+   font-size: 10px;
+   padding: 10px 50px;
+   cursor: pointer;
+   font-weight: bold;
+   align-self: center;
+   border: none;
+   margin-top: 1rem;
+  
+}
+.bodyTwitte{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+   width: 100%;
+   height:58%;
+   border: 1px solid #4e4e4e; 
+   z-index: 1; 
+}
+.apriProfilo{
+    height:30%;
+    width:100% ;
+    border: 3px solid #06b0da;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:9%; 
+}
+.button7{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    height:35px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  top:55%;
+    left: 67%;
+}
+.ricercaUtente{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:60%;
+    left: 10%;
+    height: 35px;
+    width: 250px;
+    
+}
+
+.text3{ 
+    display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 9%;
+   font-family: monospace;
+   font-size: 20px;
+   
+}
+.destra{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:5px;
+    left: 105% ;
+   width: 50%;
+   height:90%;
+   
+}
+.tendenza{
+
+    background-color: #06b0da;
+    border-radius: 15px;
+    height:60%;
+}

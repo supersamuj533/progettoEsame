@@ -1,0 +1,526 @@
+.sinistra{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 7% ;
+   width: 20%;
+   height:90%;
+   
+}
+
+.botton1{
+    background-color: #ffffff;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+}
+
+.botton2{
+    background-color: #ffffff;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+}
+
+.botton3{
+    background-color: #ffffff;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+}
+
+.botton4{
+    background-color: #ffffff;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+}
+
+.botton5{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+}
+.botton6{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+}
+
+
+.botton6:active{ color: #06b0da; }
+.botton1:hover{
+    background-color: #b8effd;
+    color: #06b0da;
+}
+.botton2:hover{
+    background-color: #b8effd;
+    color: #06b0da;
+}
+.botton3:hover{
+    background-color: #b8effd;
+    color: #06b0da;
+}
+.botton4:hover{
+    background-color: #b8effd;
+    color: #06b0da;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 5% ;
+   width: 10%;
+   height:30%;
+}
+.centro{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 27% ;
+   width: 40%;
+   height:100%;
+  
+  
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2%;
+   width: 100%;
+   height:7%;
+   font-family: monospace;
+   font-size: 15px;
+   font-weight: bolder;
+   border: 1px solid #4e4e4e;
+   
+}
+.text2{
+   
+   
+   font-family: monospace;
+   font-size: 20px;
+   
+}
+.text3{ 
+     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65%;
+    font-family: monospace;
+    font-size: 20px;
+    
+ }
+ .text4{ 
+    display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 60%;
+   left:0%;
+   font-family: monospace;
+   font-size: 20px;
+   
+}
+.divTwitte{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:8% ;
+   width: 100%;
+   height:25%;
+   font-family: monospace;
+   font-size: 20px;
+   font-weight: bolder;
+   border: 1px solid #5e5e5e;
+}
+.twitteInput{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    width: 99%;
+    height:100%;
+    z-index: 0;
+    
+}
+.tipoTwitte{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30%;
+    width: 100%;
+    height:30%;
+    z-index: 1;
+}
+.twitteButton{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0%;
+    top:75% ;
+    z-index: 1;
+   height:15%;
+   width: 90px;
+   background-color: #06b0da;
+   transition: background-color .5s;
+   border-radius: 15px;
+   text-transform: uppercase;
+   color: #000000;
+   font-size: 10px;
+   padding: 10px 50px;
+   cursor: pointer;
+   font-weight: bold;
+   align-self: center;
+   border: none;
+   margin-top: 1rem;
+  
+}
+.bodyTwitte{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+   width: 100%;
+   height:58%;
+   border: 1px solid #4e4e4e; 
+   z-index: 1; 
+}
+.destra{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10% ;
+   width: 20%;
+   height:90%;
+}
+.tendenza{
+
+    background-color: #06b0da;
+    border-radius: 15px;
+    height:60%;
+}
+.titoloTwitte{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    width: 100%;
+    height:30%;
+    z-index: 1;
+}
+.buttonTwitte{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 32%; 
+    left: 50%;
+}
+.utente{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:9% ;
+   width: 100%;
+   height:25%;
+   font-family: monospace;
+   font-size: 20px;
+   font-weight: bolder;
+   border: 1px solid #5e5e5e;
+}
+.foto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:5% ;
+    right: 5%;
+   width: 15%;
+   height:40%;
+   font-family: monospace;
+   font-size: 20px;
+   font-weight: bolder;
+   border: 1px solid #5e5e5e;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom:10%;
+    right: 5%;
+   width: 55%;
+   height:40%;
+   font-family: monospace;
+   font-size: 20px;
+   font-weight: bolder;
+   border: 1px solid #5e5e5e;
+}
+
+.bioText{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+   left: 55%;
+   bottom: 10%;
+   width: 250px;
+   height:70px;
+   font-family: monospace;
+   font-size: 20px;
+   font-weight: bolder;
+   border: 1px solid #5e5e5e;
+}
+.buttonBio{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom:10%;
+    right: 10%;
+   width: 50%;
+   height:40%;
+   font-family: monospace;
+   font-size: 20px;
+   font-weight: bolder;
+   border: 1px solid #5e5e5e;
+}
+.ricercaProfilo{
+    border-radius: 15px;
+    height:30%;
+    width:100% ;
+    border: 3px solid #06b0da;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:30%;
+}
+.apriProfilo{
+    border-radius: 15px;
+    height:8%;
+    width:100% ;
+    border: 3px solid #06b0da;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:90%; 
+}
+.button7{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    height:35px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  
+    left: 67%;
+}
+.ricercaUtente{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    height: 30px;
+    width: 180px;
+    
+}
+.ric{ display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 39%;
+    left: 1%;
+    height:20%;
+    width: 96%;
+}
+.risultato{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    width: 300px;
+   height: 200px;
+}
+
+.botton8{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+   
+}
+.botton9{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem; display: flex;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+.accetto1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+   right: 140px; 
+}
+.inputRadio{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  
+   right: 10px; 
+}
+.accetto2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+  left: 100px;
+}
+.inputRadio2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  
+ left:30px;
+}
+.botton10{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    height:35px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem; display: flex;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    left: 200px;
+}

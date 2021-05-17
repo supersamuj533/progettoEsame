@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:10px;
+    height: 60px;
+    width: 250px;
+}
+.input1:focus{
+    border: 4px solid #06b0da;
+
+}
+.input2:focus{
+    border: 4px solid #06b0da;
+   
+}
+.input1::-webkit-input-placeholder { color: #06b0da; font-style:italic; } 
+.input2::-webkit-input-placeholder { color: #06b0da; font-style:italic;} 
+.input2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 130px ;
+    top:10px;
+    height:60px;
+    width: 250px;
+}
+.email{
+    height:58px;
+    width: 200px;
+}
+.password{
+    height:58px;
+    width: 200px;
+}
+.destro_alto {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    position: absolute;
+    left: 875px ;
+}
+
+.sinistra{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height:90%;
+    position: absolute;
+    background-color: #06b0da;
+   
+}
+
+.immagine1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height:85%;
+    position: absolute;
+     top: 200px;
+   left: 200px ;
+  
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    position: absolute;
+    top: 200px;
+   left: 850px ;
+
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    position: absolute;
+    top: 100px;
+   width: 5%;
+   height:20%;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    position: absolute;
+    top: 400px;
+   left: 900px ;
+
+
+}
+.iscriviti{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 350px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+   
+}
+
+.iscriviti:hover{
+    background-color: #e9e9e9;
+    color: #06b0da;
+    border: 2px solid #06b0da;
+}
+.accedi{
+    background-color: #e9e9e9;
+    
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #06b0da;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 350px;
+    height:45px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+.accedi:hover{
+    background-color: #06b0da;
+    color: #e9e9e9;
+    border: 2px solid #e9e9e9;
+}
+.text1{
+    font-size:462.5%;
+font-weight: bold;
+}
+.text2{
+    font-size:232.5%;
+font-weight: bold;
+}
+.fine{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    position: absolute;
+text-align: center;
+top: 680px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+    font-size: small;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+.fine2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    position: absolute;
+left: 5px;
+top: 700px;
+text-align: center;
+font-size: small;
+}
+.pass{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 525px ;
+    top:35px; 
+text-decoration: underline;
+}
+
