@@ -25,6 +25,7 @@
 <div class="text1">
 <input type="radio" name="idMiPiace" class="idMiPiace" value="{{$twittes->id2}}">togli like
 <button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
+<p>{{$twittes->contaCuori}}</p>
 </div></form>
 
 <form action="/cestino2" method="get">
@@ -37,6 +38,7 @@
 <div class="text1">
 <input type="radio" name="idTwitte" class="idTwitte" value="{{$twittes->id}}">metti like 
 <button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
+<p>{{$twittes->contaCuori}}</p>
 </div>
 </form>
 

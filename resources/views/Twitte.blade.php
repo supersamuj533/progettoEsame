@@ -27,6 +27,7 @@
 <div class="accetto2">
 <input type="radio" name="idMiPiace" class="idMiPiace" value="{{$twittes->id2}}">togli like
 <button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
+<p>{{$twittes->contaCuori}}</p>
 </div></form>
 @else
 
@@ -35,6 +36,7 @@
 <div class="accetto2">
 <input type="radio" name="idTwitte" class="idTwitte" value="{{$twittes->id}}">metti like
 <button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
+<p>{{$twittes->contaCuori}}</p>
 </div></form>
 @endif
 @endforeach

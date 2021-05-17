@@ -68,7 +68,7 @@ Route::get('/accesso', [$accesso,'acs']);
 Route::get('/accesso2', [$accesso,'acs2']);
 Route::get('/accetta', function () {return view('accetta');});
 Route::get('/regDim', function () {return view('regDim');});
-Route::get('/log22', [$UtenteController,'acs']);
+Route::post('/log22', [$UtenteController,'acs']);
 Route::get('/reg22', [$UtenteController,'registrazione']);
 Route::get('//accettaCont', [$accetto,'a']);
 Route::get('/cerca', [$ricercaUt,'ricerca']);
