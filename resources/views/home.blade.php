@@ -81,6 +81,10 @@
 <label  for="" >
 <input  type="text" name="tipo"  placeholder="pubblico/privato"   >
 </label></div>
+<div class="imm" >
+<label  for="" >
+<input  type="text" name="imm"  placeholder="nome immaggine.estensione"   >
+</label></div>
 </div>
 </form>
 

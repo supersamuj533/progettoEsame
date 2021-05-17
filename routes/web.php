@@ -21,6 +21,7 @@ use App\Http\Controllers\logOutControll;
 use App\Http\Controllers\bio;
 use App\Http\Controllers\test;
 use App\Http\Controllers\accesso;
+use App\Http\Controllers\fotoProfilo;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,6 +57,7 @@ $logOutControll=logOutControll::class;
 $bio=bio::class;
 $accesso=accesso::class;
 $home=home::class;
+$fotoProfilo=fotoProfilo::class;
 
 //user
 
@@ -74,6 +76,7 @@ Route::get('/cerca', [$ricercaUt,'ricerca']);
 
 
 Route::get('/home',  [$home,'home']);
+Route::get('/foto2',  [$fotoProfilo,'delete']);
 Route::get('/twitte', [$TwitteController,'crea']);
 Route::get('/logout', [$logOut,'out']);
 Route::get('/divtwitte', [$divTwitte,'recupero']);

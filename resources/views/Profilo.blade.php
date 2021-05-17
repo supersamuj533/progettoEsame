@@ -58,6 +58,7 @@ Nome:{{ $utentes->nome}}<br><br>
 Cognome:{{ $utentes->cognome}}<br><br>
 Nome Utente:{{ $utentes->nomeUtente}}<br><br>
 Data di Nascita:{{ $utentes->dataNascita}}
+<div class="foto"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="100%" height="80%" ></div></div>
 Bio:{{ $utentes->bio}}
 @if ($boolean=='false')
 <form action="/follow" method="get"   class="buttonTwitte" >

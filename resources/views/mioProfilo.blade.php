@@ -58,8 +58,16 @@ Nome:{{ $utentes->nome}}<br><br>
 Cognome:{{ $utentes->cognome}}<br><br>
 Nome Utente:{{ $utentes->nomeUtente}}<br><br>
 Data:{{ $utentes->dataNascita}}
+<div class="foto2">
+<form action="/foto2" method="get"  >
+<label  for="" >
+<input type="text" name="foto" class="input" placeholder="Nome foto.estensione" >
+</label>
+<button  id="botton9" class="botton7" >invia</button>
+</form>
+</div>
 
-<div class="foto"><img src="immaggine/{{1}}.jfif" alt="Mia Immagine"></div>
+<div class="foto"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="100%" height="80%" ></div></div>
 @if($bio==1)
 <div class="bio">BIO:{{ $utentes->bio}}
 

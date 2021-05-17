@@ -15,7 +15,7 @@
 
 <tbody>
 <tr class="a"><td class="b">
-
+<div class="imm"><img src="immagine/{{ $twittes->imm}}" alt="Mia Immagine" width ="30%" height="30%" ></div>
 <div >@:{{ $twittes->titolo }}</div>
 <div >{{$twittes->text  }}</div>
 <div >data:{{$twittes->data  }}</div>
@@ -23,20 +23,19 @@
 @foreach ($utente as $utentes)
 
 @if ($twittes->ut==$utentes->id)
-<div class="text"><p ></p></div>
 <form action="/cuore4" method="get">
-<div class="accetto1">
-<input type="radio" name="idMiPiace" class="idMiPiace" value="{{$twittes->id2}}">togli like</div>
+<div class="accetto2">
+<input type="radio" name="idMiPiace" class="idMiPiace" value="{{$twittes->id2}}">togli like
 <button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
-</form>
+</div></form>
 @else
 
-<div class="text"><p ></p></div>
+
 <form action="/cuore" method="get">
-<div class="accetto1">
-<input type="radio" name="idTwitte" class="idTwitte" value="{{$twittes->id}}">metti like</div>
+<div class="accetto2">
+<input type="radio" name="idTwitte" class="idTwitte" value="{{$twittes->id}}">metti like
 <button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
-</form>
+</div></form>
 @endif
 @endforeach
 

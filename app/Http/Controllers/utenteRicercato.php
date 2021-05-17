@@ -56,7 +56,7 @@ class utenteRicercato extends Controller
         if(count($utente)==0){//solo e solamente se nella funzione sopra l' utente loggato e l' utenteche viene ricercato è lo stesso
             $utente = DB::table('utente')->where('stato','=',1)->get();
             foreach($utente as $utentes){$idUtente=$utentes->id;}   
-            $twitte = DB::select("SELECT  t.id,t.titolo,t.text,t.data,  p.utente ,  p.id as'id2'
+            $twitte = DB::select("SELECT  t.id,t.titolo,t.imm,t.text,t.data,  p.utente ,  p.id as'id2'
             FROM twitte t LEFT OUTER JOIN miPiace p on t.id=p.twitte where t.utente=$idUtente   and t.tipo<>3 group by( t.id )  
             order by t.data desc  ");
          $utente1 = DB::table('utente')->where('stato','=',1)->get();
@@ -64,7 +64,7 @@ class utenteRicercato extends Controller
         }
         foreach($utente as $utentes){$idUtente=$utentes->id;} 
       
-        $twitte = DB::select("SELECT  t.id,t.titolo,t.text,t.data,  p.utente ,  p.id as'id2'
+        $twitte = DB::select("SELECT  t.id,t.titolo,t.imm,t.text,t.data,  p.utente ,  p.id as'id2'
          FROM twitte t LEFT OUTER JOIN miPiace p on t.id=p.twitte where t.utente=$idUtente   and t.tipo<>3 group by( t.id )  
          order by t.data desc  ");
       $utente1 = DB::table('utente')->where('stato','=',1)->get();

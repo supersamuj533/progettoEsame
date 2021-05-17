@@ -12,6 +12,6 @@ class twitte extends Model
     public $timestamps = false;
     protected $primaryKey = 'id';
     public $incrementing = true ;
-    protected $fillable=['id','immagine','text','data','titolo','utente','tipo'];
+    protected $fillable=['id','imm','text','data','titolo','utente','tipo'];
   
 }

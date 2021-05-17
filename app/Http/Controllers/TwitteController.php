@@ -21,8 +21,8 @@ class TwitteController extends Controller
          else{$twitte->tipo=1;}
         $twitte->text= $dati['text'];
         $twitte->titolo = $dati['titolo'];
+        $twitte->imm = $dati['imm'];
         $twitte->utente=$idUtente ;
-        $twitte->immagine= 0;
         $twitte->save();
         return redirect('home')->with("Insert successfully");
     }
