@@ -57,7 +57,7 @@
 
 
 <div class="apriProfilo">
-<form action="/33"  TARGET="twitte" method="get">
+<form action="/cerca"  TARGET="twitte" method="get">
 <label  for="" >
 <input type="nome" name="parolaChiave" class="ricercaUtente" placeholder="Inserisci una parola chiave o argomento " >
 </label>

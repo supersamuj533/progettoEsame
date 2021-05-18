@@ -62,15 +62,15 @@ $fotoProfilo=fotoProfilo::class;
 //user
 
 Route::get('/test', [$test,'t']);
-Route::get('/22', [$logOutControll,'logControll']);
+Route::get('/index', [$logOutControll,'logControll']);
 Route::get('/iscrizione', function () {return view('iscrizione');});
 Route::get('/accesso', [$accesso,'acs']);
 Route::get('/accesso2', [$accesso,'acs2']);
 Route::get('/accetta', function () {return view('accetta');});
 Route::get('/regDim', function () {return view('regDim');});
-Route::post('/log22', [$UtenteController,'acs']);
+Route::get('/log22', [$UtenteController,'acs']);
 Route::get('/reg22', [$UtenteController,'registrazione']);
-Route::get('//accettaCont', [$accetto,'a']);
+Route::get('/accettaCont', [$accetto,'a']);
 Route::get('/cerca', [$ricercaUt,'ricerca']);
 
 
@@ -95,7 +95,7 @@ Route::get('/cuore5', [$MiPiaceController,'delete2']);
 Route::get('/cuore6', [$MiPiaceController,'delete3']);
 Route::get('/cestino2', [$cestino,'crea2']);
 Route::get('/twitteRicerca', [$tendenza,'esplora']);
-Route::get('/33', [$twitteRic,'cerca']);
+Route::get('/cerca', [$twitteRic,'cerca']);
 Route::get('/cestino', [$elimina,'elimina']);
 Route::get('/modificaBio', [$bio,'modifica']);
 Route::get('/modificaBio2', [$bio,'modifica2']);
