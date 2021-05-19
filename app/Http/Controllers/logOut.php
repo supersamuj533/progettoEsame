@@ -15,6 +15,6 @@ class logOut extends Controller
         $utente = utente::where('stato', 1)->first();
        $utente->stato=0 ;
        $utente->save();
-       return redirect('22')->with("Insert successfully");
+       return redirect('index')->with("Insert successfully");
     }
 }

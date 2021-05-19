@@ -71,7 +71,7 @@ Route::get('/regDim', function () {return view('regDim');});
 Route::get('/log22', [$UtenteController,'acs']);
 Route::get('/reg22', [$UtenteController,'registrazione']);
 Route::get('/accettaCont', [$accetto,'a']);
-Route::get('/cerca', [$ricercaUt,'ricerca']);
+Route::get('/cerca2', [$ricercaUt,'ricerca']);
 
 
 

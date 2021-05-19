@@ -77,9 +77,18 @@ Bio:{{ $utentes->bio}}
 
 <div class="bodyTwitte"><iframe NAME="zonacentrale"  width="100%" height="100%"></iframe></div>
 @foreach ($utente as $utentes)
+
+@if ($boolean=='true')
 <form action="/utenteRicercato2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
 <button  id="botton9" class="botton9" >Mostra Twitte</button>
 </form>
+@endif
+@if ($boolean=='false')
+<div class="buttonTwitte">
+<button  id="botton9" class="botton9"  >Mostra Twitte</button>
+</div>
+
+@endif
 @endforeach
 </div>
 

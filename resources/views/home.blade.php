@@ -111,6 +111,21 @@
 
 
 <div class='destra'>
+<div class="tendenza">
+@for ($i = 0; $i < 3; $i++)
+ 
+<div >@:{{ $twitte[$i]->titolo }}</div>
+<div >{{ $twitte[$i]->mip }}</div>
+<div >:{{ $twitte[$i]->text }}</div>
+<div >{{ $twitte[$i]->data}}</div>
+  
+@endfor
+@for ($i = 0; $i < 3; $i++)
+
+<div > {{ $utente[$i]->nomeUtente}}</div>
+<div >{{ $utente[$i]->ami }}</div>
+@endfor
+</div>
 </div>
 </body>
 </html>

@@ -12,14 +12,18 @@
 <table >
 
 @foreach ($twitte as $twittes)
+@php
+$c=1;
+@endphp
 <tbody>
 <tr class="a"><td class="b">
-@foreach ($mipiace as $mipiaces)
 <div class="imm"><img src="immagine/{{ $twittes->imm}}" alt="Mia Immagine" width ="100%" height="100%" ></div>
 <div >@:{{ $twittes->titolo }}</div>
 <div >{{$twittes->text  }}</div>
 <div >data:{{$twittes->data  }}</div>
-@if($twittes->id==$mipiaces->twitte)
+
+@foreach ($mipiace as $mipiaces)
+@if($twittes->id==$mipiaces->twitte )
 
 <div class="text1">
 <form action="/cuore5" method="get">
@@ -33,7 +37,16 @@
 <input type="radio" name="idTwitte" class="idTwitte2" value="{{$twittes->id}}">elimina  </div>
 <button  class="cestino" > <img src="https://image.freepik.com/icone-gratis/cestino-contorno-con-coperchio_318-39801.jpg" class="logo2"> </button>
 </form></div>
-@else
+@php
+$c=0;
+@endphp
+@endif
+
+@endforeach
+@if($c==1)
+@php
+$c=0;
+@endphp
 <div class="text1">
 <form action="/cuore3" method="get">
 <input type="radio" name="idTwitte" class="idTwitte" value="{{$twittes->id}}">metti like 
@@ -46,11 +59,7 @@
 <input type="radio" name="idTwitte" class="idTwitte2" value="{{$twittes->id}}">elimina</div>
 <button  class="cestino" > <img src="https://image.freepik.com/icone-gratis/cestino-contorno-con-coperchio_318-39801.jpg" class="logo2"> </button>
 </form></div>
-
 @endif
-
-@endforeach
-
 </td></tr>
 </tbody>
 @endforeach

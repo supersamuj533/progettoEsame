@@ -16,7 +16,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Reimpostazione Password</p>
 </div>
 <div >    
-<form action="/cerca" method="get">
+<form action="/cerca2" method="get">
 <button  id="cerca" class="cerca" >cerca</button>
 <div>
 <label for=""  >
