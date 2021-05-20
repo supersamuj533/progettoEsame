@@ -22,7 +22,7 @@ class logOutControll extends Controller
         return view('acc&log');
         }
 	 else{
-          return view('home');
+    return redirect('/home');
         }
     }
 }

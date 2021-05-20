@@ -16,7 +16,6 @@ class twitteRic extends Controller
         $parolaChiave=$dati['parolaChiave'];
      $twitte= DB::table('twitte')->where('text','LIKE','%'. $parolaChiave.'%' )
                       ->get();
-                     
         return view('twitteRicerca2',['twitte'=> $twitte]);
      
 }

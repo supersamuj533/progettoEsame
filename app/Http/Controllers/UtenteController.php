@@ -70,7 +70,7 @@ class UtenteController extends Controller
 				$Password=''.$data['password'].''."$cod".'';
 				$utente->password = $Password;
 				$utente->save();
-				return redirect('22');    }}
+				return redirect('index');    }}
 
  public function acs(Request $request)
  {
@@ -79,8 +79,7 @@ class UtenteController extends Controller
 
 
 	
-	 $utenteLog=DB::select('SELECT * FROM utente where stato=1');
-	 if(empty($utenteLog)){
+
   $data = $request->input();
    $Email= $data['Email'];
    $Password0=$data['Password'];
@@ -95,14 +94,14 @@ class UtenteController extends Controller
    $giorno = (int)$giornos;
    $cod=(($anno-$mese)-$giorno);
   $Password=''."$Password0".''."$cod".'';
- foreach (utente::all() as $utentes) {
-  $a=$utentes->email;
-  $b=$utentes->password;
+
+  $a=$u->email;
+  $b=$u->password;
   if($Email==$a)
  {
   if($Password==$b) 
   {
-	$c=$utentes->id;
+	$c=$u->id;
     $utentes = utente::find($c);
     $a=1;
     $utentes ->stato = $a;
@@ -112,8 +111,8 @@ class UtenteController extends Controller
   }
  
  }
-}
-	 }
+
+	 
 	
 
 
