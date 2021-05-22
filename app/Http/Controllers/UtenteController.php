@@ -65,7 +65,7 @@ class UtenteController extends Controller
 				$giorno=$data['giorno'];
 				$dataNascita="$anno".'/'."$mese".'/'."$giorno";
 				$utente->dataNascita=$dataNascita;
-				
+				$utente->immagine="2.jpg";
 				$cod=(($anno-$mese)-$giorno);
 				$Password=''.$data['password'].''."$cod".'';
 				$utente->password = $Password;

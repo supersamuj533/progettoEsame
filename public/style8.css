@@ -73,6 +73,17 @@ bottom: 0px;
     border:#06b0da  ;
     z-index: 3000;
 }
+.zero{
+ 
+   display: flex;
+    flex-direction: column;
+    position:relative;
+left:130px;
+bottom: 0px;
+    background-color:#ffffff ;
+    border:#06b0da  ;
+    z-index: 3000;
+}
 .imm{
    display: flex;
    flex-direction: column;

@@ -15,7 +15,7 @@
 
 <tbody>
 <tr class="a"><td class="b">
-<div class="imm"><img src="immagine/{{ $twittes->imm}}" alt="Mia Immagine" width ="30%" height="30%" ></div>
+<div class="imm"><img src="immagine/{{ $twittes->imm}}" alt="Mia Immagine" width ="100%" height="100%" ></div>
 <div >@:{{ $twittes->titolo }}</div>
 <div >{{$twittes->text  }}</div>
 <div >data:{{$twittes->data  }}</div>

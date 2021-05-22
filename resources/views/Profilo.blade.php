@@ -89,6 +89,11 @@ Bio:{{ $utentes->bio}}
 </div>
 
 @endif
+@if ($boolean=='MYself')
+<form action="/profilo2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
+<button  id="botton9" class="botton9" >Mostra Twitte</button>
+</form>
+@endif
 @endforeach
 </div>
 

@@ -15,6 +15,7 @@
 @php
 $c=1;
 @endphp
+
 <tbody>
 <tr class="a"><td class="b">
 <div class="imm"><img src="immagine/{{ $twittes->imm}}" alt="Mia Immagine" width ="100%" height="100%" ></div>
@@ -33,6 +34,7 @@ $c=1;
 @foreach($mipiaceTot as $mipiaceTots)
 @if($twittes->id==$mipiaceTots->twitte )
 {{$mipiaceTots->ContaCuore}}
+
 @endif
 @endforeach
 </div>
@@ -42,11 +44,7 @@ $c=1;
 <input type="radio" name="idTwitte" class="idTwitte2" value="{{$twittes->id}}">elimina  </div>
 <button  class="cestino" > <img src="https://image.freepik.com/icone-gratis/cestino-contorno-con-coperchio_318-39801.jpg" class="logo2"> </button>
 </form>
-@foreach ($mipiaceTot as $mipiaceTots)
-@if($twittes->id==$mipiaceTots->twitte)
-{{$mipiaceTots->ContaCuore}}
-@endif
-@endforeach
+
 </div>
 @php
 $c=0;
@@ -62,7 +60,14 @@ $c=0;
 <form action="/cuore3" method="get">
 <input type="radio" name="idTwitte" class="idTwitte" value="{{$twittes->id}}">metti like 
 <button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
-</form></div>
+</form>
+@foreach($mipiaceTot as $mipiaceTots)
+@if($twittes->id==$mipiaceTots->twitte )
+{{$mipiaceTots->ContaCuore}}
+
+@endif
+@endforeach
+</div>
 
 
 <div class="text2">
@@ -70,9 +75,11 @@ $c=0;
 <input type="radio" name="idTwitte" class="idTwitte2" value="{{$twittes->id}}">elimina</div>
 <button  class="cestino" > <img src="https://image.freepik.com/icone-gratis/cestino-contorno-con-coperchio_318-39801.jpg" class="logo2"> </button>
 </form></div>
+
 @endif
 </td></tr>
 </tbody>
+
 @endforeach
 
 
