@@ -21,14 +21,19 @@ class utenteRicercato extends Controller
                 
         utente::where('stato', '=', 3)->update(['stato' => 0]);
                 $utente = DB::table('utente')->where('nomeUtente','LIKE','%'.$nomeUtente.'%')->get();
+                foreach($utente as $utentes){$id=$utentes->id;}
+                $utenteA = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteAccetta=$id ");
+                $utenteR = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteRichiede=$id ");
                 $boolean='MYself';
-                return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean]); 
+                return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean, 'utenteA'=>$utenteA, 'utenteR'=>$utenteR]); 
             }
         }
         utente::where('stato', '=', 3)->update(['stato' => 0]);
         utente::where('nomeUtente', 'LIKE', '%'.$nomeUtente.'%')->update(['stato' => 3]);
         $utente = DB::table('utente')->where('nomeUtente','LIKE','%'.$nomeUtente.'%')->get();
-      
+        foreach($utente as $utentes){$id=$utentes->id;}
+        $utenteA = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteAccetta=$id ");
+        $utenteR = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteRichiede=$id ");
         $Utente3= DB::select('SELECT * FROM utente u where u.stato=3');
         $boolean='false';
         foreach (amicizia::all() as $amicizias) {
@@ -45,7 +50,7 @@ class utenteRicercato extends Controller
                      }
             }}}}
         
-        return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean]);
+        return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean,'utenteA'=>$utenteA, 'utenteR'=>$utenteR]);
       
     }
 

@@ -52,6 +52,14 @@
 </div>
 <div class='centro'>
 <div class="text1"><p>Mio Profilo</p></div>
+<div class="countAmicizia">
+@foreach($utenteA as $utenteAs)
+Utenti che ti seguono:{{ $utenteAs->count}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+@endforeach
+@foreach($utenteR as $utenteRs)
+Utenti che segui:{{ $utenteRs->count}}
+@endforeach
+</div>
 <div class="utente">   
 @foreach ($utente as $utentes)
 Nome:{{ $utentes->nome}}<br><br>

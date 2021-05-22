@@ -13,8 +13,10 @@ class profilo extends Controller
     { 
         $bio=1;
         $utente = DB::select('SELECT * FROM utente where stato=1');
-       
-        return view('mioProfilo',['utente'=> $utente],['bio'=>$bio] );
+        foreach($utente as $utentes){$id=$utentes->id;}
+        $utenteA = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteAccetta=$id ");
+        $utenteR = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteRichiede=$id ");
+        return view('mioProfilo',['utente'=> $utente],['bio'=>$bio, 'utenteA'=>$utenteA, 'utenteR'=>$utenteR] );
       
     }
 
