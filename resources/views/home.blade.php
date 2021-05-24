@@ -35,7 +35,9 @@
 <button  id="botton4" class="botton4" >Profilo</button>
 </form></div>
 <div>
-
+<form action="/divtwitte" method="get"  TARGET="zonacentrale" >
+<button  id="botton6" class="botton6" >Mostra Twitte</button>
+</form>
 </div>
 
 <div>
@@ -60,26 +62,25 @@
 
 <form action="/twitte" method="get">
 
+
 <div  class="divTwitte">
-
-<div class="titoloTwitte">
-<div >
-<label  for="" >
-<input type="nome" name="titolo" class="twitteTitolo" placeholder="Titolo del Twitte" >
-</label></div>
-</div>
-
 <div> 
 <button  id="twitteButton" class="twitteButton" >Twitte</button>
 </div >
+
+<div  >
+<label  for="" >
+<input type="text" name="titolo" class="tot" placeholder="Titolo del Twitte" >
+</label></div>
 
 <div >
 <label  for="" >
 <input  type="text" name="text" class="twitteInput" placeholder="Che c'è di nuovo?"   >
 </label></div>
+
 <div class="tipoTwitte" >
 <label  for="" >
-<input  type="text" name="tipo"  placeholder="pubblico/privato"   >
+<input  type="text" name="tipo" class="tipo" placeholder="pubblico/privato"   >
 </label></div>
 
 
@@ -87,7 +88,7 @@
 
 <div class="imm" >
 <label  for="" >
-<input  type="text" name="imm"  placeholder="inserisci nome immaggine"   >
+<input  type="text" name="imm"  class="im" placeholder="inserisci nome immaggine"   >
 </label></div>
 
 
@@ -101,31 +102,37 @@
 
 <div class="bodyTwitte"><iframe NAME="zonacentrale"  width="100%" height="100%"></iframe></div>
 
-<form action="/divtwitte" method="get"  TARGET="zonacentrale" class="buttonTwitte">
-<button  id="botton6" class="botton6" >Mostra Twitte</button>
-</form>
+
+
+
+
+
 </div>
-
-
-
-
-
 <div class='destra'>
-<div class="tendenza">
-@for ($i = 0; $i < 3; $i++)
- 
-<div >@:{{ $twitte[$i]->titolo }}</div>
-<div >{{ $twitte[$i]->mip }}</div>
-<div >:{{ $twitte[$i]->text }}</div>
-<div >{{ $twitte[$i]->data}}</div>
-  
-@endfor
-@for ($i = 0; $i < 3; $i++)
 
-<div > {{ $utente[$i]->nomeUtente}}</div>
-<div >{{ $utente[$i]->ami }}</div>
+<div class="tendenza">
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 POST CON PIU' LIKE
+<br>
+@for ($i = 0; $i < 3; $i++)
+<div class="t">
+<div >@:{{ $twitte[$i]->titolo }}</div>
+<div >LIKE:{{ $twitte[$i]->mip }}</div>
+<div >Testo:{{ $twitte[$i]->text }}</div>
+<div >Data:{{ $twitte[$i]->data}}</div>
+</div>
+@endfor
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 UTENTI CON PIU' AMICIZIE
+<br>
+@for ($i = 0; $i < 3; $i++)
+<div class="u">
+<div >Nome: {{ $utente[$i]->nomeUtente}}</div>
+<div >AMICIZIE:{{ $utente[$i]->ami }}</div>
+</div>
 @endfor
 </div>
+
+
 </div>
 </body>
 </html>

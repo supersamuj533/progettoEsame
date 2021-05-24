@@ -73,21 +73,27 @@
 
 
 
-
+</div>
 <div class='destra'>
 <div class="tendenza">
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 POST CON PIU' LIKE
+<br>
 @for ($i = 0; $i < 3; $i++)
- 
+<div class="t">
 <div >@:{{ $twitte[$i]->titolo }}</div>
-<div >{{ $twitte[$i]->mip }}</div>
-<div >:{{ $twitte[$i]->text }}</div>
-<div >{{ $twitte[$i]->data}}</div>
-  
+<div >LIKE:{{ $twitte[$i]->mip }}</div>
+<div >Testo:{{ $twitte[$i]->text }}</div>
+<div >Data:{{ $twitte[$i]->data}}</div>
+</div>
 @endfor
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 UTENTI CON PIU' AMICIZIE
+<br>
 @for ($i = 0; $i < 3; $i++)
-
-<div > {{ $utente[$i]->nomeUtente}}</div>
-<div >{{ $utente[$i]->ami }}</div>
+<div class="u">
+<div >Nome: {{ $utente[$i]->nomeUtente}}</div>
+<div >AMICIZIE:{{ $utente[$i]->ami }}</div>
+</div>
 @endfor
 </div>
 </div>

@@ -2,93 +2,99 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 7% ;
    width: 20%;
    height:90%;
-   
 }
 
 .botton1{
-    background-color: #ffffff;
+    background-color: #06b0da;
     transition: background-color .5s;
     border-radius: 25px;
     text-transform: uppercase;
-    color: #000000;
+    color: #ffffff;
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
-    width: 300px;
+    width: 200px;
     height:45px;
     align-self: center;
     border: none;
     margin-top: 1rem;
+
     display: flex;
     flex-direction: column;
     position: absolute;
+    right: 0%;
     top: 10%;
 }
 
 .botton2{
-    background-color: #ffffff;
+    background-color: #06b0da;
     transition: background-color .5s;
     border-radius: 25px;
     text-transform: uppercase;
-    color: #000000;
+    color: #ffffff;
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
-    width: 300px;
+    width: 200px;
     height:45px;
     align-self: center;
     border: none;
     margin-top: 1rem;
+
     display: flex;
     flex-direction: column;
     position: absolute;
+    right: 0%;
     top: 20%;
 }
 
 .botton3{
-    background-color: #ffffff;
+    background-color: #06b0da;
     transition: background-color .5s;
     border-radius: 25px;
     text-transform: uppercase;
-    color: #000000;
+    color: #ffffff;
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
-    width: 300px;
+    width: 200px;
     height:45px;
     align-self: center;
     border: none;
     margin-top: 1rem;
+
     display: flex;
     flex-direction: column;
     position: absolute;
+    right: 0%;
     top: 30%;
 }
 
 .botton4{
-    background-color: #ffffff;
+    background-color: #06b0da;
     transition: background-color .5s;
     border-radius: 25px;
     text-transform: uppercase;
-    color: #000000;
+    color: #ffffff;
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
-    width: 300px;
+    width: 200px;
     height:45px;
     align-self: center;
     border: none;
     margin-top: 1rem;
+
     display: flex;
     flex-direction: column;
     position: absolute;
+    right: 0%;
     top: 40%;
 }
 
@@ -102,14 +108,16 @@
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
-    width: 300px;
+    width: 200px;
     height:45px;
     align-self: center;
     border: none;
     margin-top: 1rem;
+
     display: flex;
     flex-direction: column;
     position: absolute;
+    right: 0%;
     top: 100%;
 }
 .botton6{
@@ -127,30 +135,68 @@
     align-self: center;
     border: none;
     margin-top: 1rem;
+
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    right: 0%;
+    top: 50%;
+    z-index: 2;
+}
+.botton7{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 30px;
+    height:25px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0%;
+    top: 50%;
     z-index: 2;
 }
 
 
-.botton6:active{ color: #06b0da; }
 .botton1:hover{
-    background-color: #b8effd;
+    background-color: #e9e9e9;
     color: #06b0da;
+    border: 2px solid #06b0da;
 }
 .botton2:hover{
-    background-color: #b8effd;
+    background-color: #e9e9e9;
     color: #06b0da;
+    border: 2px solid #06b0da;
 }
 .botton3:hover{
-    background-color: #b8effd;
+    background-color: #e9e9e9;
     color: #06b0da;
+    border: 2px solid #06b0da;
 }
 .botton4:hover{
-    background-color: #b8effd;
+    background-color: #e9e9e9;
     color: #06b0da;
+    border: 2px solid #06b0da;
+}
+.botton5:hover{
+    background-color: #ffffff;
+    color: #06b0da;
+    border: 2px solid #06b0da;
+}
+.botton6:hover{
+    background-color: #e9e9e9;
+    color: #06b0da;
+    border: 2px solid #06b0da;
 }
 
 .logo{
@@ -166,23 +212,22 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 27% ;
-   width: 40%;
+    left: 24% ;
+   width: 45%;
    height:100%;
-  
   
 }
 .text1{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 2%;
+    top: 1%;
    width: 100%;
-   height:7%;
+   height:6%;
    font-family: monospace;
    font-size: 15px;
    font-weight: bolder;
-   border: 1px solid #4e4e4e;
+   border: 3px solid #06b0da;;
    
 }
 .countAmicizia{
@@ -230,17 +275,16 @@
     position: absolute;
     top:8% ;
    width: 100%;
-   height:25%;
+   height:30%;
    font-family: monospace;
    font-size: 20px;
    font-weight: bolder;
-   border: 1px solid #5e5e5e;
+   border: 3px solid #06b0da;
 }
 .twitteInput{
     display: flex;
     flex-direction: column;
     position: absolute;
-    
     width: 99%;
     height:100%;
     z-index: 0;
@@ -264,6 +308,23 @@
     height:30%;
     z-index: 1;
 }
+
+.b{
+    width: 600px;
+    height: 200px;
+    background-color: #06b0da;
+    color: #ffffff;
+    cursor: pointer;  
+ }
+.immt{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 60%;
+    width: 30%;
+    height:30%;
+    z-index: 1;
+ }
 .twitteButton{
     display: flex;
     flex-direction: column;
@@ -291,92 +352,96 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 40%;
+    top: 39%;
    width: 100%;
-   height:58%;
-   border: 1px solid #4e4e4e; 
+   height:60%;
+   border: 3px solid #06b0da; 
    z-index: 1; 
 }
 .destra{
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 10% ;
-   width: 20%;
-   height:90%;
+    left:70%;
+   width: 30%;
+   height:95%;
 }
 .tendenza{
 
-    background-color: #06b0da;
+    background-color:#e9e9e9;
     border-radius: 15px;
     height:60%;
+    position: absolute;
+    top:10%;
+    left:10%;
+    border: 3px solid #06b0da;
 }
 .titoloTwitte{
     display: flex;
     flex-direction: column;
     position: absolute;
-    
+    background-color: #06b0da;
     width: 100%;
     height:30%;
     z-index: 1;
 }
-.buttonTwitte{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 32%; 
-    left: 50%;
-}
+
 .utente{
     display: flex;
     flex-direction: column;
     position: absolute;
     top:9% ;
    width: 100%;
-   height:25%;
+   height:30%;
    font-family: monospace;
    font-size: 20px;
    font-weight: bolder;
-   border: 1px solid #5e5e5e;
+   border: 3px solid #06b0da;
+}
+.dati{
+    width: 50%;
+    height:100%;   
 }
 .foto{
     display: flex;
     flex-direction: column;
     position: absolute;
     top:5% ;
-    right: 5%;
+    right: 20%;
    width: 15%;
    height:40%;
    font-family: monospace;
    font-size: 20px;
    font-weight: bolder;
-   border: 1px solid #5e5e5e;
+   border: 1px solid #06b0da;
 }
 .foto2{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top:5% ;
-    right: 24%;
-   width: 40%;
-   height:20%;
+bottom:55%;
+    right: 25%;
+   width: 45%;
+   height:50%;
    font-family: monospace;
    font-size: 20px;
    font-weight: bolder;
-   border: 1px solid #5e5e5e;
+   border: 2px solid #06b0da;
+   border-radius: 15px;
 }
 .bio{
     display: flex;
     flex-direction: column;
     position: absolute;
     bottom:10%;
-    right: 5%;
-   width: 55%;
+    right: 0%;
+   width: 50%;
    height:40%;
    font-family: monospace;
    font-size: 20px;
    font-weight: bolder;
-   border: 1px solid #5e5e5e;
+   border: 2px solid #06b0da;
+   border-radius: 10px;
 }
 
 .bioText{
@@ -443,8 +508,28 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-  
     left: 67%;
+}
+.bosco{
+    background-color: #06b0da;
+    transition: background-color .5s;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height:30px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 85%;
+    top: 65%;
 }
 .ricercaUtente{
     display: flex;
@@ -558,4 +643,18 @@
     position: absolute;
     top: 68px;
     left: 200px;
+}
+.tot::-webkit-input-placeholder { color: #06b0da; font-style:italic; } 
+.tipo::-webkit-input-placeholder { color: #06b0da; font-style:italic; } 
+.im::-webkit-input-placeholder { color: #06b0da; font-style:italic; } 
+.twitteInput::-webkit-input-placeholder { color: #06b0da; font-style:italic; } 
+.t{
+    border: 3px solid #06b0da;
+  height: 18%;
+  width: 99%;
+}
+.u{
+    border: 3px solid #06b0da;
+    height: 9%;
+    width: 99%;
 }

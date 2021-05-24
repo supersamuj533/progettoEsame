@@ -34,7 +34,9 @@
 <button  id="botton4" class="botton4" >Profilo</button>
 </form></div>
 <div>
-
+<form action="/profilo2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
+<button  id="botton6" class="botton6" >Mostra Twitte</button>
+</form>
 </div>
 
 <div>
@@ -53,27 +55,34 @@
 <div class='centro'>
 <div class="text1"><p>Mio Profilo</p></div>
 <div class="countAmicizia">
+
+<div class="foto2">
+
+<form action="/foto2" method="get"  >
+<label  for="" >&nbsp;&nbsp;
+<input type="text" name="foto" class="input" placeholder="Nome foto.estensione" >
+</label>
+<button  id="botton9" class="botton7" >invia</button>
+</form>
+
+</div>
 @foreach($utenteA as $utenteAs)
-Utenti che ti seguono:{{ $utenteAs->count}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Follower:{{ $utenteAs->count}}&nbsp;&nbsp;&nbsp;
 @endforeach
 @foreach($utenteR as $utenteRs)
-Utenti che segui:{{ $utenteRs->count}}
+Follow:{{ $utenteRs->count}}
 @endforeach
+
 </div>
 <div class="utente">   
+    <div class="dati">
 @foreach ($utente as $utentes)
 Nome:{{ $utentes->nome}}<br><br>
 Cognome:{{ $utentes->cognome}}<br><br>
 Nome Utente:{{ $utentes->nomeUtente}}<br><br>
 Data:{{ $utentes->dataNascita}}
-<div class="foto2">
-<form action="/foto2" method="get"  >
-<label  for="" >
-<input type="text" name="foto" class="input" placeholder="Nome foto.estensione" >
-</label>
-<button  id="botton9" class="botton7" >invia</button>
-</form>
 </div>
+
 
 <div class="foto"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="100%" height="80%" ></div></div>
 @if($bio==1)
@@ -82,7 +91,7 @@ Data:{{ $utentes->dataNascita}}
 <form action="/modificaBio" method="get" class="buttonTwitte">
 
 </div>
-<button  id="botton7" class="botton7" >modifica</button>
+<button  id="botton7" class="bosco" >modifica</button>
 </form>
 @endif
 @if($bio==2)
@@ -91,7 +100,7 @@ Data:{{ $utentes->dataNascita}}
 <label  for="" >
 <input type="bio" name="bio" class="input" placeholder="Inserisci qui la tua nuova Bio" >
 </label>
-<button  id="botton8" class="botton7" >fine</button>
+<button  id="botton8" class="bosco" >fine</button>
 </form>
 </div>
 @endif
@@ -102,9 +111,7 @@ Data:{{ $utentes->dataNascita}}
 
 <div class="bodyTwitte"><iframe NAME="zonacentrale"  width="100%" height="100%"></iframe></div>
 
-<form action="/profilo2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
-<button  id="botton6" class="botton6" >Mostra Twitte</button>
-</form>
+
 </div>
 
 

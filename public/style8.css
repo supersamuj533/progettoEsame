@@ -105,3 +105,23 @@ bottom: 0px;
    position: relative;
 left: 90px;
 }
+.t{
+   border: 3px solid #06b0da;
+ height: 18%;
+ width: 99%;
+}
+.u{
+   border: 3px solid #06b0da;
+   height: 9%;
+   width: 99%;
+}
+.tendenza{
+
+   background-color:#e9e9e9;
+   border-radius: 15px;
+   height:60%;
+   position: absolute;
+   top:10%;
+   left:10%;
+   border: 3px solid #06b0da;
+}
