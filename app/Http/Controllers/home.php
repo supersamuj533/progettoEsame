@@ -13,7 +13,7 @@ class home extends Controller
     public function home()
     {
         
-        
+        try{
         $twitte = DB::select(
         "SELECT count(p.id) as 'mip',t.titolo , t.text , t.data
     FROM mipiace p join twitte t on t.id=p.twitte 
@@ -29,10 +29,13 @@ class home extends Controller
      
 $message='';
     return view('home',['twitte'=> $twitte],['utente'=> $utente,'message'=> $message]);
+  }
+  catch (Exception $e){ return redirect('/home');} 
     }
 
     public function home2()
     {
+        try{
         $twitte = DB::select(
             "SELECT count(p.id) as 'mip',t.titolo , t.text , t.data
         FROM mipiace p join twitte t on t.id=p.twitte 
@@ -47,5 +50,7 @@ $message='';
          order by(ami) desc ");
         $message='Inserisci un twitte non superiore ai 254 caratteri';
         return view('home',['twitte'=> $twitte],['utente'=> $utente,'message'=> $message]);
+      }
+      catch (Exception $e){ return redirect('/home2');} 
     }
 }

@@ -12,7 +12,7 @@ class cestino extends Controller
 { 
     
     public function crea2(Request $request)
-    {  
+    {  try{
         $data = $request->input();
         $idTwitte= $data['idTwitte'];
         twitte::where('id', '=', $idTwitte)->update(['tipo' => 3]);
@@ -24,6 +24,8 @@ class cestino extends Controller
        $mipiace=DB::select("SELECT * from mipiace p where p.utente=$idUtente ");
        $mipiaceTot=DB::select("SELECT count(p.id) as 'ContaCuore', p.twitte from mipiace p group by(p.twitte) ");
            return view('mioProfilo2',['twitte'=> $twitte, 'mipiace'=> $mipiace,'mipiaceTot'=> $mipiaceTot]);
+    }
+    catch (Exception $e){ return redirect('/cestino3');}
     }
   
 }

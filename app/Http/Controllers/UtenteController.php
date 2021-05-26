@@ -14,10 +14,8 @@ class UtenteController extends Controller
 {
      
   public function registrazione(Request $request)
-  {/* $this->validate($request, [
-
-    ]);*/
-
+  {
+	  try{
 		$validator = Validator::make($request->all(), [
 			'nome' => 'required|min:0|max:20',
 		]);
@@ -132,14 +130,16 @@ class UtenteController extends Controller
 				$Password=''.$data['password'].''."$cod".'';
 				$utente->password = $Password;
 				$utente->save();
-				return redirect('index');    }}
+				return redirect('index');    }
+					}	catch (Exception $e){ return redirect('/reg22');} 
+			}
 
  public function acs(Request $request)
  {
 	
 
 
-
+try{
 	
 
   $data = $request->input();
@@ -201,6 +201,8 @@ class UtenteController extends Controller
 
 
 	 return redirect('/accesso2');
+}
+catch (Exception $e){ return redirect('/log22');} 
 }
  
  }

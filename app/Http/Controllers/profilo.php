@@ -10,18 +10,19 @@ use App\Http\Controllers\Controller;
 class profilo extends Controller
 {
     public function utente()
-    { 
+    { try{
         $bio=1;
         $utente = DB::select('SELECT * FROM utente where stato=1');
         foreach($utente as $utentes){$id=$utentes->id;}
         $utenteA = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteAccetta=$id ");
         $utenteR = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteRichiede=$id ");
         return view('mioProfilo',['utente'=> $utente,'bio'=>$bio, 'utenteA'=>$utenteA, 'utenteR'=>$utenteR] );
-      
+    }
+    catch (Exception $e){ return redirect('/profilo');} 
     }
 
     public function twitte()
-    { 
+    { try{
         $utente = DB::select('SELECT * FROM utente where stato=1');
         foreach($utente as $utentes){$idUtente=$utentes->id;} 
       
@@ -30,6 +31,7 @@ class profilo extends Controller
     $mipiace=DB::select("SELECT * from mipiace p where p.utente=$idUtente ");
     $mipiaceTot=DB::select("SELECT count(p.id) as 'ContaCuore', p.twitte from mipiace p group by(p.twitte) ");
         return view('mioProfilo2',['twitte'=> $twitte, 'mipiace'=> $mipiace,'mipiaceTot'=> $mipiaceTot]);
-      
+    }
+    catch (Exception $e){ return redirect('/profilo2');} 
     }
 }

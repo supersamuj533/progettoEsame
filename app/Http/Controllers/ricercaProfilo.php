@@ -17,7 +17,7 @@ class ricercaProfilo extends Controller
         return view('ricercaProfilo',['utente'=> $utente] );
     }
     catch(Exception $e){
-        return redirect('home')->with("operation failed");
+        return redirect('/ricercaProfilo')->with("operation failed");
     }
     }
 }

@@ -38,7 +38,7 @@ class TwitteController extends Controller
     }
     catch(Exception $e){
         $message='';
-        return redirect('home')->with($message);
+        return redirect('/twitte')->with($message);
     }
     }
 }

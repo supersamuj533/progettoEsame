@@ -11,7 +11,7 @@ use App\Models\twitte;
 class ricercaUt extends Controller
 { 
     public function ricerca(Request $request)
-    {  
+    {  try{
         $dati = $request->input();
         $parolaChiave=$dati['ricerca'];
      $email = DB::table('utente')->where('email','LIKE', $parolaChiave )
@@ -27,7 +27,9 @@ class ricercaUt extends Controller
    foreach($numero  as  $numeros){
     if($numeros->numero==$parolaChiave){$utente=$numero;}}
         return view('regDim2',['utente'=> $utente]);
-     
+   }
+   catch (Exception $e){ return redirect('/cerca2');} 
+    
 }
 
 

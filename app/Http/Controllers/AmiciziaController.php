@@ -11,7 +11,7 @@ use App\Models\amicizia;
 class AmiciziaController extends Controller
 {
     public function crea()
-    { 
+    { try{
         $utente = DB::table('utente')->where('stato','=',3)->get();
         $user = DB::table('utente')->where('stato','=',1)->get();
         foreach($utente as $utentes){$id=$utentes->id;}
@@ -33,13 +33,15 @@ class AmiciziaController extends Controller
         $utente = DB::select('SELECT * FROM utente u where u.stato=3');
         return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean,'utenteA'=>$utenteA, 'utenteR'=>$utenteR]);
       
-
+        }
+        catch (Exception $e){ return redirect('/follow');}
         
       
     }
 
     public function delete ()
     { 
+      try{
       $utente = DB::table('utente')->where('stato','=',3)->get();
       foreach($utente as $utentes){$id=$utentes->id;}
       $utenteA = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteAccetta=$id ");
@@ -59,6 +61,7 @@ class AmiciziaController extends Controller
 
         $boolean='false';
         return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean,'utenteA'=>$utenteA, 'utenteR'=>$utenteR]);
-      
+      }
+      catch (Exception $e){ return redirect('/followDelete');}
     }
 }

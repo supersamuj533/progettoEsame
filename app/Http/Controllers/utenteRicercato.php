@@ -12,7 +12,8 @@ use App\Models\amicizia;
 class utenteRicercato extends Controller
 {  
     public function utente(Request $request)
-    {   $utenteVecchio= DB::select('SELECT u.id FROM utente u where u.stato=3');
+    { try{
+          $utenteVecchio= DB::select('SELECT u.id FROM utente u where u.stato=3');
         $data = $request->input();
         $nomeUtente= $data['nomeUtente2'];
         $Utente1= DB::select('SELECT * FROM utente u where u.stato=1');
@@ -51,12 +52,15 @@ class utenteRicercato extends Controller
             }}}}
         
         return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean,'utenteA'=>$utenteA, 'utenteR'=>$utenteR]);
+    }
+    catch (Exception $e){ return redirect('/utenteRicercato');} 
+
       
     }
 
     public function twitte()
     { 
-     
+     try{
         $utente = DB::table('utente')->where('stato','=',3)->get();
         if(count($utente)==0){//solo e solamente se nella funzione sopra l' utente loggato e l' utenteche viene ricercato è lo stesso
             $utente = DB::table('utente')->where('stato','=',1)->get();
@@ -77,6 +81,7 @@ class utenteRicercato extends Controller
       $mipiace=DB::select("SELECT * from mipiace p where p.utente=$idUtente ");
       $mipiaceTot=DB::select("SELECT count(p.id) as 'ContaCuore', p.twitte from mipiace p group by(p.twitte) ");
         return view('mioProfilo3',['twitte'=> $twitte],['utente1'=>$utente1, 'mipiace'=> $mipiace,'mipiaceTot'=> $mipiaceTot] );
-      
+    }
+    catch (Exception $e){ return redirect('/utenteRicercato2');} 
     }
 }

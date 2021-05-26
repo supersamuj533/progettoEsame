@@ -11,7 +11,7 @@ use App\Http\Controllers\Controller;
 class tendenza extends Controller
 { 
     public function esplora(Request $request)
-    {  
+    {  try{
         $twitte = DB::select(
             "SELECT count(p.id) as 'mip',t.titolo , t.text , t.data
         FROM mipiace p join twitte t on t.id=p.twitte 
@@ -26,6 +26,8 @@ class tendenza extends Controller
          order by(ami) desc ");
 
         return view('twitteRicerca',['twitte'=> $twitte],['utente'=> $utente]);
+      }
+      catch (Exception $e){ return redirect('/twitteRicerca');} 
     }
 
 

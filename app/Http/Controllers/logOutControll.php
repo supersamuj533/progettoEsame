@@ -16,6 +16,7 @@ class logOutControll extends Controller
 
  public function logControll(Request $request)
    {
+     try{
 	 $utenteLog=DB::select('SELECT * FROM utente where stato=1');
 	 if(empty($utenteLog))
       {
@@ -24,5 +25,8 @@ class logOutControll extends Controller
 	 else{
     return redirect('/home');
         }
+
+      }
+      catch (Exception $e){ return redirect('/index');} 
     }
 }

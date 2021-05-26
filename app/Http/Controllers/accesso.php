@@ -14,13 +14,19 @@ class accesso extends Controller
 {
  public function acs(Request $request)
  {
+     try{
      $a=1;
-return view('accesso',['a'=> $a] );
+return view('accesso',['a'=> $a] );}
+catch (Exception $e){ return redirect('/accesso');}
+     
 }
+
 public function acs2(Request $request)
- {
+ {try{
      $a=2;
 return view('accesso',['a'=> $a] );
+ }
+ catch (Exception $e){ return redirect('/accesso');}
 }
  
  }
