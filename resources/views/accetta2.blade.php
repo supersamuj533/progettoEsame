@@ -14,6 +14,7 @@
 </div>
 <div >    
 <form action="/accettaCont" method="get">
+@csrf
 <div>
 <p class="text2">Accetta trattazione dei dati</p>
 <p class="text3">Presa coscienza del fatto che abilito il sito a condividere i Dati condivisi o a cui il sito a accesso</p>

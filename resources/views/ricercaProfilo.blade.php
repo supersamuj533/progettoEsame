@@ -13,6 +13,7 @@
 <div class="risultato">
 @foreach ($utente as $utentes)
 <form action="/utenteRicercato"  method="get">
+@csrf
 <button  class="botton8" >{{ $utentes->nomeUtente}}</button>
 </form>
 @endforeach

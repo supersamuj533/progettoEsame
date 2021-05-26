@@ -17,26 +17,31 @@
 </div>
 <div>
 <form action="/home" method="get">
+@csrf
 <button  id="botton1" class="botton1" >home</button>
 </form></div>
 
 <div>
 <form action="/twitteRicerca" method="get">
+@csrf
 <button  id="botton2" class="botton2" >Esplora</button>
 </form></div>
 <div>
 <form action="/cestino" method="get">
+@csrf
 <button  id="botton3" class="botton3" >Cestino</button>
 </form></div>
 
 <div>
 <form action="/profilo" method="get">
+@csrf
 <button  id="botton4" class="botton4" >Profilo</button>
 </form></div>
 @foreach ($utente as $utentes)
 
 @if ($boolean=='true')
 <form action="/utenteRicercato2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
+@csrf
 <button  id="botton9" class="botton9" >Mostra Twitte</button>
 </form>
 @endif
@@ -48,6 +53,7 @@
 @endif
 @if ($boolean=='MYself')
 <form action="/profilo2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
+@csrf
 <button  id="botton9" class="botton9" >Mostra Twitte</button>
 </form>
 @endif
@@ -58,6 +64,7 @@
 
 <div>
 <form action="/logout" method="get">
+@csrf
 <button  id="botton5" class="botton5" >Log Out</button>
 </form></div>
 
@@ -89,10 +96,12 @@ Data di Nascita:{{ $utentes->dataNascita}}
 Bio:{{ $utentes->bio}}
 @if ($boolean=='false')
 <form action="/follow" method="get"   class="buttonTwitte" >
+@csrf
 <button  id="botton10" class="botton10"  >Segui</button>
 </form>
 @elseif ($boolean=='true')
 <form action="/followDelete" method="get"   class="buttonTwitte" >
+@csrf
 <button  id="botton10" class="botton10" >Non Seguire</button>
 </form>
 @elseif ($boolean=='MYself')
@@ -117,6 +126,7 @@ qui sotto. </p>
 <div class="ricercaProfilo">
 
 <form action="/ricercaProfilo" TARGET="ricercaProfilo" method="get">
+@csrf
 <button  id="ricerca" class="button7" >Cerca</button>
 <label  for="" >
 <input type="nome" name="nomeUtente" class="ricercaUtente" placeholder="Inserisci qui il nome utente" >
@@ -130,6 +140,7 @@ qui sotto. </p>
 
 <div class="apriProfilo">
 <form action="/utenteRicercato"  method="get">
+@csrf
 <button  id="ricerca2" class="button7" >Apri </button>
 <label  for="" >
 <input type="nome" name="nomeUtente2" class="ricercaUtente" placeholder="Inserisci qui il nome utente" >

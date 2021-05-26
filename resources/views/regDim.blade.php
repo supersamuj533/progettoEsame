@@ -17,6 +17,7 @@
 </div>
 <div >    
 <form action="/cerca2" method="get">
+@csrf
 <button  id="cerca" class="cerca" >cerca</button>
 <div>
 <label for=""  >

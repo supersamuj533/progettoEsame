@@ -28,6 +28,7 @@ $d=0;
 @foreach ($mipiace as $mipiaces)
 @if($twittes->id==$mipiaces->twitte )
 <form action="/cuore4" method="get">
+@csrf
 <div class="accetto2">
 <button  class="cuore" name="idT"  value="{{$twittes->id}}" ><span style="font-size:250%;color:red;">&hearts;</span></button>
 </form>
@@ -49,6 +50,7 @@ $c=0;
 $c=0;
 @endphp
 <form action="/cuore" method="get">
+@csrf
 <div class="accetto2">
 
 <button  class="cuore" name="idTwitte"  value="{{$twittes->id}}"><img src="https://th.bing.com/th/id/OIP.bHElRcIsQNeWYfU0s6L5GQHaFN?w=224&h=180&c=7&o=5&dpr=1.25&pid=1.7" class="cu"></button>

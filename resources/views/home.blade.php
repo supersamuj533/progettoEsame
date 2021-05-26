@@ -23,25 +23,30 @@
 
 <div>
 <form action="/twitteRicerca" method="get">
+@csrf
 <button  id="botton2" class="botton2" >Esplora</button>
 </form></div>
 <div>
 <form action="/cestino" method="get">
+@csrf
 <button  id="botton3" class="botton3" >Cestino</button>
 </form></div>
 
 <div>
 <form action="/profilo" method="get">
+@csrf
 <button  id="botton4" class="botton4" >Profilo</button>
 </form></div>
 <div>
 <form action="/divtwitte" method="get"  TARGET="zonacentrale" >
+@csrf
 <button  id="botton6" class="botton6" >Mostra Twitte</button>
 </form>
 </div>
 
 <div>
 <form action="/logout" method="get">
+@csrf
 <button  id="botton5" class="botton5" >Log Out</button>
 </form></div>
 
@@ -63,7 +68,7 @@
 
 
 <form action="/twitte" method="get">
-
+@csrf
 
 <div  class="divTwitte">
 <div> 

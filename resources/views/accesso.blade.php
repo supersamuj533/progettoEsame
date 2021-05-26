@@ -21,6 +21,7 @@
 
 <div>    
 <form action="/log22" method="get">
+@csrf
 <div class="imput"  >
 <label class="input1" for="" >
 <input type="Email" name="Email" class="input1" placeholder="Email" >

@@ -34,9 +34,11 @@
 </div>
 <div class="bottom" >
 <form action="/accetta" method="get">
+@csrf
 <button  id="signup" class="iscriviti" >iscriviti</button>
 </form>
 <form action="/accesso" method="get">
+@csrf
 <button id="signin" class="accedi">accedi</button>
 </form>
 </div>

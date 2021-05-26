@@ -66,7 +66,7 @@ Route::get('/index', [$logOutControll,'logControll']);
 Route::get('/iscrizione', function () {return view('iscrizione');});
 Route::get('/accesso', [$accesso,'acs']);
 Route::get('/accesso2', [$accesso,'acs2']);
-Route::get('/accetta', function () {return view('accetta');});
+Route::get('/accetta', [$accetto,'b']);
 Route::get('/regDim', function () {return view('regDim');});
 Route::get('/log22', [$UtenteController,'acs']);
 Route::get('/reg22', [$UtenteController,'registrazione']);

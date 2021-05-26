@@ -124,3 +124,11 @@ a {
       top: 375px;
       left: 20px ;
   }
+.message{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+top: 350px;
+left: 70px;
+color: red;
+  }

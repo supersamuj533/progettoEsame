@@ -17,30 +17,36 @@
 </div>
 <div>
 <form action="/home" method="get">
+@csrf
 <button  id="botton1" class="botton1" >home</button>
 </form></div>
 
 <div>
 <form action="/twitteRicerca" method="get">
+@csrf
 <button  id="botton2" class="botton2" >Esplora</button>
 </form></div>
 <div>
 <form action="/cestino" method="get">
+@csrf
 <button  id="botton3" class="botton3" >Cestino</button>
 </form></div>
 
 <div>
 <form action="/profilo" method="get">
+@csrf
 <button  id="botton4" class="botton4" >Profilo</button>
 </form></div>
 <div>
 <form action="/profilo2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
+@csrf
 <button  id="botton6" class="botton6" >Mostra Twitte</button>
 </form>
 </div>
 
 <div>
 <form action="/logout" method="get">
+@csrf
 <button  id="botton5" class="botton5" >Log Out</button>
 </form></div>
 
@@ -59,6 +65,7 @@
 <div class="foto2">
 
 <form action="/foto2" method="get"  >
+@csrf
 <label  for="" >&nbsp;&nbsp;
 <input type="text" name="foto" class="input2" placeholder="Nome foto.estensione" >
 </label>
@@ -89,7 +96,7 @@ Data:{{ $utentes->dataNascita}}
 <div class="bio">BIO:{{ $utentes->bio}}
 
 <form action="/modificaBio" method="get" class="buttonTwitte">
-
+@csrf
 </div>
 <button  id="botton7" class="bosco" >modifica</button>
 </form>
@@ -97,6 +104,7 @@ Data:{{ $utentes->dataNascita}}
 @if($bio==2)
 <div class="bio" >
 <form action="/modificaBio2" method="get"  >
+@csrf
 <label  for="" >
 <input type="bio" name="bio" class="input" placeholder="Inserisci qui la tua nuova Bio" >
 </label>
@@ -125,6 +133,7 @@ qui sotto. </p>
 <div class="ricercaProfilo">
 
 <form action="/ricercaProfilo" TARGET="ricercaProfilo" method="get">
+@csrf
 <button  id="ricerca" class="button7" >Cerca</button>
 <label  for="" >
 <input type="nome" name="nomeUtente" class="ricercaUtente" placeholder="Inserisci qui il nome utente" >
@@ -138,6 +147,7 @@ qui sotto. </p>
 
 <div class="apriProfilo">
 <form action="/utenteRicercato"  method="get">
+@csrf
 <button  id="ricerca2" class="button7" >Apri </button>
 <label  for="" >
 <input type="nome" name="nomeUtente2" class="ricercaUtente" placeholder="Inserisci qui il nome utente" >

@@ -13,6 +13,7 @@
 </div>
 <div >    
 <form action="/reg22" method="get">
+@csrf
 <button  id="avanti" class="avanti" >avanti</button>
 </div >
 <div>

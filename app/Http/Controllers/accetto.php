@@ -8,15 +8,17 @@ class accetto extends Controller
 {
     public function a(Request $request)
     {
-      $data = [];
-      $data = [
-        'accetto1' => 'no',
-        'accetto2' => 'no'
-        ];
+     
      $data = $request->input();
-   
-     $accetto1= $data['accetto1'];
-     $accetto2= $data['accetto2'];
+   if(empty($data['accetto1']))
+   {$accetto1="no";}
+   else {
+     $accetto1= $data['accetto1'];}
+     if(empty($data['accetto2'])){
+      $accetto2="no";
+     }
+     else{
+     $accetto2= $data['accetto2'];}
 
      if($accetto1=="si")
      {
@@ -24,8 +26,18 @@ class accetto extends Controller
      {
        $a=0;
       return view('iscrizione',['a'=> $a] );
-     }
-     }else{return view('accetta');}
+     }else{
+       $message='Devi accettare le condizioni per proseguire';
+       return view('accetta',['message'=>$message]);}
+     }else{
+      $message='Devi accettare le condizioni per proseguire';
+       return view('accetta',['message'=>$message]);}
    
    }
+   public function b(Request $request)
+    {
+
+      $message='';
+      return view('accetta',['message'=>$message]);
+    }
 }
