@@ -33,6 +33,25 @@
 <form action="/profilo" method="get">
 <button  id="botton4" class="botton4" >Profilo</button>
 </form></div>
+@foreach ($utente as $utentes)
+
+@if ($boolean=='true')
+<form action="/utenteRicercato2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
+<button  id="botton9" class="botton9" >Mostra Twitte</button>
+</form>
+@endif
+@if ($boolean=='false')
+<div class="buttonTwitte">
+<button  id="botton9" class="botton9"  >Mostra Twitte</button>
+</div>
+
+@endif
+@if ($boolean=='MYself')
+<form action="/profilo2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
+<button  id="botton9" class="botton9" >Mostra Twitte</button>
+</form>
+@endif
+@endforeach
 <div>
 <p class="text4">3 passo:<br>Per Visualizzare i twitte dell' utente clicca sul pallino indicato dalla freccia a Centro pagine  e poi sul bottone MOSTRA TWITTE</p>
 </div>
@@ -66,7 +85,7 @@ Nome:{{ $utentes->nome}}<br><br>
 Cognome:{{ $utentes->cognome}}<br><br>
 Nome Utente:{{ $utentes->nomeUtente}}<br><br>
 Data di Nascita:{{ $utentes->dataNascita}}
-<div class="foto"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="100%" height="80%" ></div></div>
+<div class="foto0"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="101%" height="85%" ></div></div>
 Bio:{{ $utentes->bio}}
 @if ($boolean=='false')
 <form action="/follow" method="get"   class="buttonTwitte" >
@@ -84,25 +103,7 @@ Bio:{{ $utentes->bio}}
 
 
 <div class="bodyTwitte"><iframe NAME="zonacentrale"  width="100%" height="100%"></iframe></div>
-@foreach ($utente as $utentes)
 
-@if ($boolean=='true')
-<form action="/utenteRicercato2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
-<button  id="botton9" class="botton9" >Mostra Twitte</button>
-</form>
-@endif
-@if ($boolean=='false')
-<div class="buttonTwitte">
-<button  id="botton9" class="botton9"  >Mostra Twitte</button>
-</div>
-
-@endif
-@if ($boolean=='MYself')
-<form action="/profilo2" method="get"  TARGET="zonacentrale" class="buttonTwitte">
-<button  id="botton9" class="botton9" >Mostra Twitte</button>
-</form>
-@endif
-@endforeach
 </div>
 
 

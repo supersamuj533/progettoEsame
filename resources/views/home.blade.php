@@ -119,7 +119,6 @@
 <div >@:{{ $twitte[$i]->titolo }}</div>
 <div >LIKE:{{ $twitte[$i]->mip }}</div>
 <div >Testo:{{ $twitte[$i]->text }}</div>
-<div >Data:{{ $twitte[$i]->data}}</div>
 </div>
 @endfor
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 UTENTI CON PIU' AMICIZIE

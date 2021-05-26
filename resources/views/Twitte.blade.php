@@ -9,49 +9,71 @@
 </head>
 <body > 
 <div  TARGET="zonacentrale">
-<table >
+
 
 @foreach ($twitte as $twittes)
+@php
+$c=1;
+@endphp
+@php
+$d=0;
+@endphp
+<div class="b">
+<div class="par">
+<div >Utente:<b>{{ $twittes->nomeUtente}}</b>  @ {{ $twittes->titolo }}</div> <div class="parData">data:{{$twittes->data  }}</div>
+<div >{{$twittes->text  }} </div>
 
-<tbody>
-<tr class="a"><td class="b">
+</div>
 <div class="imm"><img src="immagine/{{ $twittes->imm}}" alt="Mia Immagine" width ="100%" height="100%" ></div>
-<div >@:{{ $twittes->titolo }}</div>
-<div >{{$twittes->text  }}</div>
-<div >data:{{$twittes->data  }}</div>
-<div class='nomeUtente'>Utente: {{ $twittes->nomeUtente}}</div>
-@foreach ($utente as $utentes)
-
-@if ($twittes->ut==$utentes->id)
+@foreach ($mipiace as $mipiaces)
+@if($twittes->id==$mipiaces->twitte )
 <form action="/cuore4" method="get">
 <div class="accetto2">
-<input type="radio" name="idMiPiace" class="idMiPiace" value="{{$twittes->id2}}">togli like
-<button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
-<p>{{$twittes->contaCuori}}</p>
-</div></form>
-@else
+<button  class="cuore" name="idT"  value="{{$twittes->id}}" ><span style="font-size:250%;color:red;">&hearts;</span></button>
+</form>
+@foreach($mipiaceTot as $mipiaceTots)
+@if($twittes->id==$mipiaceTots->twitte )
+<p class="contaCuori">&emsp;&emsp; <b>{{$mipiaceTots->ContaCuore}}</b></p>
+</div>
 
-
-<form action="/cuore" method="get">
-<div class="accetto2">
-<input type="radio" name="idTwitte" class="idTwitte" value="{{$twittes->id}}">metti like
-<button  class="cuore" ><span style="font-size:250%;color:red;">&hearts;</span></button>
-<p>{{$twittes->contaCuori}}</p>
-</div></form>
 @endif
 @endforeach
 
+@php
+$c=0;
+@endphp
+@endif
+@endforeach
+@if($c==1)
+@php
+$c=0;
+@endphp
+<form action="/cuore" method="get">
+<div class="accetto2">
+
+<button  class="cuore" name="idTwitte"  value="{{$twittes->id}}"><img src="https://th.bing.com/th/id/OIP.bHElRcIsQNeWYfU0s6L5GQHaFN?w=224&h=180&c=7&o=5&dpr=1.25&pid=1.7" class="cu"></button>
+</form>
+@foreach($mipiaceTot as $mipiaceTots)
+@if($twittes->id==$mipiaceTots->twitte )
+@php
+$d=$mipiaceTots->ContaCuore;
+@endphp
+@endif
+@endforeach
+<p class="contaCuori">&emsp;&emsp; <b>{{$d}}</b></p>
+</div>
 
 
 
 
-</td></tr>
-</tbody>
 
 
+</div>
+@endif
+<br><br>
 @endforeach
 
-</table>
+
 </div>
 </body>
 </html>

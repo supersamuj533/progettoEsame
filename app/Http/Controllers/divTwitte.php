@@ -25,10 +25,11 @@ class divTwitte extends Controller
 
      
      $utente = DB::select('SELECT * from utente where stato=1');
-
+     foreach($utente as $utentes){$idUtente=$utentes->id;} 
+     $mipiace=DB::select("SELECT * from mipiace p where p.utente=$idUtente ");
+     $mipiaceTot=DB::select("SELECT count(p.id) as 'ContaCuore', p.twitte from mipiace p group by(p.twitte) ");
         
-        
-        return view('Twitte',['twitte'=> $twitte],['utente'=>$utente]);
+        return view('Twitte',['twitte'=> $twitte ,'utente'=>$utente, 'mipiace'=> $mipiace,'mipiaceTot'=> $mipiaceTot]);
       
     }
 }

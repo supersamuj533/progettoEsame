@@ -73,7 +73,10 @@ class utenteRicercato extends Controller
          FROM twitte t LEFT OUTER JOIN miPiace p on t.id=p.twitte where t.utente=$idUtente   and t.tipo<>3 group by( t.id )  
          order by t.data desc  ");
       $utente1 = DB::table('utente')->where('stato','=',1)->get();
-        return view('mioProfilo3',['twitte'=> $twitte],['utente1'=>$utente1] );
+      foreach($utente1 as $utente1s){$idUtente=$utente1s->id;} 
+      $mipiace=DB::select("SELECT * from mipiace p where p.utente=$idUtente ");
+      $mipiaceTot=DB::select("SELECT count(p.id) as 'ContaCuore', p.twitte from mipiace p group by(p.twitte) ");
+        return view('mioProfilo3',['twitte'=> $twitte],['utente1'=>$utente1, 'mipiace'=> $mipiace,'mipiaceTot'=> $mipiaceTot] );
       
     }
 }

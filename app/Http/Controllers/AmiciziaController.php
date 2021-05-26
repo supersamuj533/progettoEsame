@@ -14,7 +14,9 @@ class AmiciziaController extends Controller
     { 
         $utente = DB::table('utente')->where('stato','=',3)->get();
         $user = DB::table('utente')->where('stato','=',1)->get();
-       
+        foreach($utente as $utentes){$id=$utentes->id;}
+        $utenteA = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteAccetta=$id ");
+        $utenteR = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteRichiede=$id ");
         $amicizia = new amicizia;
 				foreach($utente as $utentes){
         $amicizia->utenteAccetta= $utentes->id;}
@@ -29,8 +31,8 @@ class AmiciziaController extends Controller
 
          
         $utente = DB::select('SELECT * FROM utente u where u.stato=3');
-        return view('Profilo',['utente'=> $utente],['boolean'=>$boolean] );
-
+        return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean,'utenteA'=>$utenteA, 'utenteR'=>$utenteR]);
+      
 
         
       
@@ -38,7 +40,10 @@ class AmiciziaController extends Controller
 
     public function delete ()
     { 
-
+      $utente = DB::table('utente')->where('stato','=',3)->get();
+      foreach($utente as $utentes){$id=$utentes->id;}
+      $utenteA = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteAccetta=$id ");
+      $utenteR = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteRichiede=$id ");
       $utente = DB::select('SELECT * FROM utente u where u.stato=3');
     
           $ai= DB::select('SELECT a.id, a.data FROM amicizia a join utente u on u.id=a.utenteAccetta
@@ -53,6 +58,7 @@ class AmiciziaController extends Controller
        
 
         $boolean='false';
-        return view('Profilo',['utente'=> $utente],['boolean'=>$boolean] );
+        return view('Profilo',['utente'=> $utente] ,['boolean'=>$boolean,'utenteA'=>$utenteA, 'utenteR'=>$utenteR]);
+      
     }
 }

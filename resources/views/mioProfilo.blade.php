@@ -60,7 +60,7 @@
 
 <form action="/foto2" method="get"  >
 <label  for="" >&nbsp;&nbsp;
-<input type="text" name="foto" class="input" placeholder="Nome foto.estensione" >
+<input type="text" name="foto" class="input2" placeholder="Nome foto.estensione" >
 </label>
 <button  id="botton9" class="botton7" >invia</button>
 </form>
@@ -84,7 +84,7 @@ Data:{{ $utentes->dataNascita}}
 </div>
 
 
-<div class="foto"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="100%" height="80%" ></div></div>
+<div class="foto"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="100%" height="85%" ></div></div>
 @if($bio==1)
 <div class="bio">BIO:{{ $utentes->bio}}
 
@@ -95,12 +95,12 @@ Data:{{ $utentes->dataNascita}}
 </form>
 @endif
 @if($bio==2)
-<div class="bioText" >
+<div class="bio" >
 <form action="/modificaBio2" method="get"  >
 <label  for="" >
 <input type="bio" name="bio" class="input" placeholder="Inserisci qui la tua nuova Bio" >
 </label>
-<button  id="botton8" class="bosco" >fine</button>
+<button  id="botton8" class="bosco1" >fine</button>
 </form>
 </div>
 @endif

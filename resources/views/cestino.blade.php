@@ -34,7 +34,9 @@
 <button  id="botton4" class="botton4" >Profilo</button>
 </form></div>
 <div>
-
+<form action="/cestino2" method="get"  TARGET="Cestino" >
+<button  id="botton6" class="botton6" >Mostra Twitte Eliminati</button>
+</form>
 </div>
 
 <div>
@@ -60,20 +62,12 @@ Nome:{{ $utentes->nome}}<br><br>
 Cognome:{{ $utentes->cognome}}<br><br>
 Nome Utente:{{ $utentes->nomeUtente}}<br><br>
 Data:{{ $utentes->dataNascita}}
-<div class="foto"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="100%" height="86%" ></div></div>
+<div class="fotooo"><div ><img src="immagine/{{ $utentes->immagine}}" alt="Mia Immagine" width ="100%" height="86%" ></div></div>
 @endforeach
 </div>
-<div class="bodyTwitte">
-@foreach ($twitte as $twittes)
 
-<tbody>
-<tr class="a"><td class="b">
-<div class="immt"><img src="immagine/{{ $twittes->imm}}" alt="Mia Immagine" width ="100%" height="100%" ></div>
-<div >@:{{ $twittes->titolo }}</div>
-<div >{{$twittes->text  }}</div>
-<div >data:{{$twittes->data  }}</div>
-<div class='nomeUtente'>Utente: {{ $twittes->utente}}</div>
-@endforeach
+<div class="bodyTwitte">
+<iframe NAME="Cestino"  width="100%" height="100%"></iframe>
 </div>
 
 
@@ -90,7 +84,6 @@ Data:{{ $utentes->dataNascita}}
 <div >@:{{ $twitte2[$i]->titolo }}</div>
 <div >LIKE:{{ $twitte2[$i]->mip }}</div>
 <div >Testo:{{ $twitte2[$i]->text }}</div>
-<div >Data:{{ $twitte2[$i]->data}}</div>
 </div>
 @endfor
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 UTENTI CON PIU' AMICIZIE

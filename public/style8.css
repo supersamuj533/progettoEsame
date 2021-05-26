@@ -1,10 +1,31 @@
+.sotto{
+   background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   bottom: 5%;
+   left: 0%;
+}
+.cu{
 
+   width: 25px;
+   height:25px;
+   
+}
+.bb{
+   width: 670px;
+   height: 200px;
+   background-color: #06b0da;
+   color: #ffffff;
+   cursor: pointer; 
+}
 .b{
-    width: 600px;
-    height: 200px;
+    width: 650px;
+    height: 300px;
     background-color: #06b0da;
     color: #ffffff;
-    cursor: pointer;  
+    cursor: pointer;
+    border: 3px solid #000000;  
  }
  .c{
     width: 20%;
@@ -16,14 +37,7 @@
     left: 0%;
     text-align: initial;
  }
- .nomeUtente{
 
-   display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 0%;
-    left: 0%;
- }
 
 .text{
    display: flex;
@@ -39,9 +53,17 @@ background-color: beige;
    display: flex;
    flex-direction: column;
    position: relative; 
-
-   left: 80px;   
-    background-color:#06b0da ;
+   left: 150px;
+   bottom: 40px;   
+}
+.cestino1{
+ 
+   display: flex;
+   flex-direction: column;
+   position: relative; 
+   left: 150px;
+ bottom: 10px;
+   z-index: 7;  
 }
 
 .text1{
@@ -67,7 +89,7 @@ z-index: 1;
    display: flex;
     flex-direction: column;
     position: absolute;
-left:110px;
+left:60px;
 bottom: 0px;
     background-color:#ffffff ;
     border:#06b0da  ;
@@ -85,13 +107,45 @@ bottom: 0px;
     z-index: 3000;
 }
 .imm{
+  
+   display:flex;
+   flex-direction: column;
+   position: relative;
+
+   left:30%;
+   width: 40%;
+   height:60%;
+   z-index: 1;
+}
+.imm2{
+  
+   display:flex;
+   flex-direction: column;
+   position: relative;
+top: 8%;
+   left:30%;
+   width: 40%;
+   height:60%;
+   z-index: 1;
+}
+
+.par{
    display: flex;
    flex-direction: column;
-   position: absolute;
-   left: 60%;
-   width: 30%;
-   height:30%;
+   position: relative;
+   top:0% ;
+   left: 0%;
+   width: 100%;
+   height:20%;
    z-index: 1;
+   background-color: #06b0da ;
+}
+.parData{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+
+   left: 70%;
 }
 .logo2{
    
@@ -103,8 +157,25 @@ bottom: 0px;
    display: flex;
    flex-direction: column;
    position: relative;
-left: 90px;
+   top: 20px;
+   height:40px ;
+  width:100%;
+   background-color:#ffffff ;
+   z-index: 4;
+   color: black;
 }
+
+
+
+
+.contaCuori{
+z-index: 5;
+color: black;
+display: flex;
+   flex-direction: column;
+   position: relative;
+   bottom: 5%;
+ }
 .t{
    border: 3px solid #06b0da;
  height: 18%;

@@ -96,6 +96,7 @@ Route::get('/cuore6', [$MiPiaceController,'delete3']);
 Route::get('/cestino2', [$cestino,'crea2']);
 Route::get('/twitteRicerca', [$tendenza,'esplora']);
 Route::get('/cerca', [$twitteRic,'cerca']);
+Route::get('/cestino2', [$elimina,'elimina2']);
 Route::get('/cestino', [$elimina,'elimina']);
 Route::get('/modificaBio', [$bio,'modifica']);
 Route::get('/modificaBio2', [$bio,'modifica2']);

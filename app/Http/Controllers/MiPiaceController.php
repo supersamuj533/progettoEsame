@@ -42,9 +42,16 @@ class MiPiaceController extends Controller
     }
     public function delete1(Request $request)
     {  $data = $request->input();
-        $id=$data['idMiPiace'];
-      
-        miPiace::destroy($id);
+        $id=$data['idT'];
+        $utente = DB::select("SELECT * FROM  utente u where u.stato=1 ");
+        foreach($utente as $utentes){
+           $idu=$utentes->id;
+        }
+        $mipiace = DB::select("SELECT * FROM  miPiace p where p.twitte=$id and p.utente=$idu");
+        foreach($mipiace as $mipiaces){
+            $idp=$mipiaces->id;
+        }
+        miPiace::destroy($idp);
         return redirect('divtwitte')->with("Insert successfully");
     }
     public function delete2(Request $request)

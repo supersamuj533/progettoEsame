@@ -16,7 +16,7 @@ class profilo extends Controller
         foreach($utente as $utentes){$id=$utentes->id;}
         $utenteA = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteAccetta=$id ");
         $utenteR = DB::select("SELECT count(a.id) as 'count' FROM amicizia a where a.utenteRichiede=$id ");
-        return view('mioProfilo',['utente'=> $utente],['bio'=>$bio, 'utenteA'=>$utenteA, 'utenteR'=>$utenteR] );
+        return view('mioProfilo',['utente'=> $utente,'bio'=>$bio, 'utenteA'=>$utenteA, 'utenteR'=>$utenteR] );
       
     }
 
