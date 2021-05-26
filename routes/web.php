@@ -93,7 +93,7 @@ Route::get('/cuore2', [$MiPiaceController,'crea2']);
 Route::get('/cuore4', [$MiPiaceController,'delete1']);
 Route::get('/cuore5', [$MiPiaceController,'delete2']);
 Route::get('/cuore6', [$MiPiaceController,'delete3']);
-Route::get('/cestino2', [$cestino,'crea2']);
+Route::get('/cestino3', [$cestino,'crea2']);
 Route::get('/twitteRicerca', [$tendenza,'esplora']);
 Route::get('/cerca', [$twitteRic,'cerca']);
 Route::get('/cestino2', [$elimina,'elimina2']);

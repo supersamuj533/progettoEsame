@@ -30,12 +30,12 @@ $d=0;
 @if($twittes->id==$mipiaces->twitte )
 <form action="/cuore6" method="get">
 <div class="accetto2">
-<button  class="cuore"  name="idMiPiace" value="{{$twittes->id2}}"><span style="font-size:250%;color:red;">&hearts;</span></button>
+<button  class="cuore"  name="idMiPiace" value="{{$twittes->id}}"><span style="font-size:250%;color:red;">&hearts;</span></button>
 </div>
 </form>
 @foreach($mipiaceTot as $mipiaceTots)
 @if($twittes->id==$mipiaceTots->twitte )
-<p class="contaCuori">&emsp;&emsp; <b>{{$mipiaceTots->ContaCuore}}</b></p>
+<p class="contaCuori2">&emsp;&emsp; <b>{{$mipiaceTots->ContaCuore}}</b></p>
 </div>
 
 @endif
@@ -62,7 +62,7 @@ $d=$mipiaceTots->ContaCuore;
 @endphp
 @endif
 @endforeach
-<p class="contaCuori">&emsp;&emsp; <b>{{$d}}</b></p>
+<p class="contaCuori2">&emsp;&emsp; <b>{{$d}}</b></p>
 </div>
 
 

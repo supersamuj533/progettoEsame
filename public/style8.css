@@ -48,13 +48,14 @@ right:0px;
 background-color: beige;
 }
 
-.cestino{
+.cestino2{
  
    display: flex;
    flex-direction: column;
    position: relative; 
    left: 150px;
-   bottom: 40px;   
+   bottom: 10px;  
+   z-index: 7;  
 }
 .cestino1{
  
@@ -62,8 +63,8 @@ background-color: beige;
    flex-direction: column;
    position: relative; 
    left: 150px;
- bottom: 10px;
-   z-index: 7;  
+ bottom: 60px;
+   z-index: 7;    
 }
 
 .text1{
@@ -174,8 +175,18 @@ color: black;
 display: flex;
    flex-direction: column;
    position: relative;
-   bottom: 5%;
+   bottom: 60%;
+   left: 8%;
  }
+ .contaCuori2{
+   z-index: 5;
+   color: black;
+   display: flex;
+      flex-direction: column;
+      position: relative;
+      bottom: 15%;
+      left: 8%;
+    }
 .t{
    border: 3px solid #06b0da;
  height: 18%;
