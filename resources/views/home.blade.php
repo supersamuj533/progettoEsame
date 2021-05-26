@@ -57,7 +57,9 @@
 
 
 
-<div class="text1"><p>Home</p></div>
+<div class="text1"><p>Home </p></div>
+<div class="message"><p >{{$message}} </p>
+</div>
 
 
 <form action="/twitte" method="get">
@@ -82,9 +84,6 @@
 <label  for="" >
 <input  type="text" name="tipo" class="tipo" placeholder="pubblico/privato"   >
 </label></div>
-
-
-
 
 <div class="imm" >
 <label  for="" >

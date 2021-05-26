@@ -19,14 +19,14 @@
 <p class="text1">Crea il tuo Account</p>
 </div>
 <div class="imput"  >
+
+@if($a==0)
 <label  for="" >
 <input type="nome" name="nome" class="input2" placeholder="nome" >
 </label>
 <label  for="" >
 <input type="cognome" name="cognome" class="input6" placeholder="cognome" >
 </label>
-
-@if($a==0)
 <label  for=""  >
 <input type="numero" name="numero" class="input1" placeholder="numero telefonico"  >
 </label>
@@ -36,10 +36,28 @@
 <label  for=""  >
 <input type="nomeUtente" name="nomeUtente" class="input5" placeholder="Nome Utente"  >
 </label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
 @endif
 
 
 @if($a==1)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
 <label  for=""  >
 <input type="numero" name="numero" class="input10" placeholder="x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numero telefonico gia esistente"  >
@@ -50,8 +68,26 @@
 <label  for=""  >
 <input type="nomeUtente" name="nomeUtente" class="input5" placeholder="Nome Utente"  >
 </label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
 @endif
 @if($a==2)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
 <label  for=""  >
 <input type="numero" name="numero" class="input1" placeholder="numero telefonico"  >
 </label>
@@ -62,30 +98,9 @@
 <label  for=""  >
 <input type="nomeUtente" name="nomeUtente" class="input5" placeholder="Nome Utente"  >
 </label>
-@endif
-
-
-@if($a==3)
-<label  for=""  >
-<input type="numero" name="numero" class="input1" placeholder="numero telefonico"  >
-</label>
-<label  for="" >
-<input type="email" name="email" class="input3" placeholder="email" >
-</label>
-<label  for=""  >
-<input type="nomeUtente" name="nomeUtente" class="input12" placeholder="x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome Utente gia esistente"  >
-</label>
-@endif
-
-
-
-
 <label  for=""  >
 <input type="password" name="password" class="input4" placeholder="password"  >
 </label>
-
-
 <label  for=""  >
 <input type="anno" name="anno" class="input7" placeholder="anno"  >
 </label>
@@ -95,9 +110,305 @@
 <label  for=""  >
 <input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
 </label>
+@endif
 
 
-
+@if($a==3)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero telefonico"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="inputtt" placeholder="x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome Utente gia esistente"  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==4)
+<label  for="" >
+<input type="nome" name="nome" class="input12" placeholder="x
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserisci un nome Max:20 carratteri" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero telefonico"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input5" placeholder="Nome Utente"  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==5)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input16" placeholder="x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserisci un cognome Max:20 carratteri" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero telefonico"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input5" placeholder="Nome Utente"  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==6)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input11t" placeholder="x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inserisci un numero telefonico valido"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input5" placeholder="Nome Utente"  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==7)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input13" placeholder="x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inserisci un email valida" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input5" placeholder="Nome Utente"  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==8)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input5" placeholder="Nome Utente"  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input14" placeholder="x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inserisci password valida max:20 caratteri"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==9)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input15" placeholder="x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inserisci un nome utente valida max:20 caratteri"  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==10)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input5" placeholder=" utente "  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input17" placeholder="Max/min: 4 cifre"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==11)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input5" placeholder=" utente "  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno "  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input18" placeholder="Max/min: 2 cifre"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input9" placeholder="giorno"  >
+</label>
+@endif
+@if($a==12)
+<label  for="" >
+<input type="nome" name="nome" class="input2" placeholder="nome" >
+</label>
+<label  for="" >
+<input type="cognome" name="cognome" class="input6" placeholder="cognome" >
+</label>
+<label  for=""  >
+<input type="numero" name="numero" class="input1" placeholder="numero"  >
+</label>
+<label  for="" >
+<input type="email" name="email" class="input3" placeholder="email" >
+</label>
+<label  for=""  >
+<input type="nomeUtente" name="nomeUtente" class="input5" placeholder=" utente "  >
+</label>
+<label  for=""  >
+<input type="password" name="password" class="input4" placeholder="password"  >
+</label>
+<label  for=""  >
+<input type="anno" name="anno" class="input7" placeholder="anno"  >
+</label>
+<label  for=""  >
+<input type="mese" name="mese" class="input8" placeholder="mese"  >
+</label>
+<label  for=""  >
+<input type="giorno" name="giorno" class="input19" placeholder="Max/min: 2 cifre"  >
+</label>
+@endif
 </form>
 
 <div>

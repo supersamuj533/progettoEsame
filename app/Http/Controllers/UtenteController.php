@@ -14,19 +14,81 @@ class UtenteController extends Controller
 {
      
   public function registrazione(Request $request)
-  {/*
-    $rules = [
-			'email' => 'required|string|min:3|max:255',
-			'city_name' => 'required|string|min:3|max:255',
-			'email' => 'required|string|email|max:255'
-		];
-		$validator = Validator::make($request->all(),$rules);
+  {/* $this->validate($request, [
+
+    ]);*/
+
+		$validator = Validator::make($request->all(), [
+			'nome' => 'required|min:0|max:20',
+		]);
+		$validator2 = Validator::make($request->all(), [
+			'cognome' => 'required|min:0|max:20',
+		]);
+		$validator3 = Validator::make($request->all(), [
+			'numero' => 'required|min:0|max:10',
+			'numero' =>'integer',
+			'numero' =>'numeric',
+		]);
+		$validator4 = Validator::make($request->all(), [
+			'email' => 'required|min:0|max:30',
+		]);
+		$validator5 = Validator::make($request->all(), [
+			'password' => 'required|min:0|max:20',
+		]);
+		$validator6 = Validator::make($request->all(), [
+			'nomeUtente' => 'required|min:0|max:15',
+		]);
+		$validator7 = Validator::make($request->all(), [
+			'anno' => 'required|min:4|max:4',
+			'anno' =>'integer',
+			'anno' =>'numeric',
+		]);
+		$validator8 = Validator::make($request->all(), [
+		'mese' => 'required|min:2|max:2',
+		'mese' =>'integer',
+			'mese' =>'numeric',
+		]);
+		$validator9 = Validator::make($request->all(), [
+	   'giorno' => 'required|min:2|max:2',
+	   'giorno' =>'integer',
+			'giorno' =>'numeric',	
+		]);
 		if ($validator->fails()) {
-			return redirect('insert')
-			->withInput()
-			->withErrors($validator);
+			$a=4;
+			return view('iscrizione',['a'=> $a] );
 		}
-		else{...>>}*/
+		if ($validator2->fails()) {
+			$a=5;
+			return view('iscrizione',['a'=> $a] );
+		}
+		if ($validator3->fails()) {
+			$a=6;
+			return view('iscrizione',['a'=> $a] );
+		}
+		if ($validator4->fails()) {
+			$a=7;
+			return view('iscrizione',['a'=> $a] );
+		}
+		if ($validator5->fails()) {
+			$a=8;
+			return view('iscrizione',['a'=> $a] );
+		}
+		if ($validator6->fails()) {
+			$a=9;
+			return view('iscrizione',['a'=> $a] );
+		}
+		if ($validator7->fails()) {
+			$a=10;
+			return view('iscrizione',['a'=> $a] );
+		}
+		if ($validator8->fails()) {
+			$a=11;
+			return view('iscrizione',['a'=> $a] );
+		}
+		if ($validator9->fails()) {
+			$a=12;
+			return view('iscrizione',['a'=> $a] );
+		}
             $data = $request->input();
 			
 				$utente = new utente;
@@ -85,7 +147,15 @@ class UtenteController extends Controller
    $Password0=$data['Password'];
    
    $u = utente::where('email', "$Email")->first();
-   $data=$u->dataNascita;
+   if(empty($u->dataNascita))
+   { $data='0000/00/00';}
+   else{
+	$data=$u->dataNascita;
+   }
+ 
+
+
+
    $annos=substr("$data",0,4);
    $anno = (int)$annos;
    $meses=substr("$data",5,2);
@@ -94,9 +164,16 @@ class UtenteController extends Controller
    $giorno = (int)$giornos;
    $cod=(($anno-$mese)-$giorno);
   $Password=''."$Password0".''."$cod".'';
-
-  $a=$u->email;
-  $b=$u->password;
+  if(empty($u->email)){
+	$a='*******';
+  }
+  else{
+  $a=$u->email;}
+  if(empty($u->password)){
+	$b='*******';
+  }
+  else{
+  $b=$u->password;}
   if($Email==$a)
  {
   if($Password==$b) 

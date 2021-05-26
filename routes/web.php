@@ -76,6 +76,7 @@ Route::get('/cerca2', [$ricercaUt,'ricerca']);
 
 
 Route::get('/home',  [$home,'home']);
+Route::get('/home2',  [$home,'home2']);
 Route::get('/foto2',  [$fotoProfilo,'modifica']);
 Route::get('/twitte', [$TwitteController,'crea']);
 Route::get('/logout', [$logOut,'out']);
