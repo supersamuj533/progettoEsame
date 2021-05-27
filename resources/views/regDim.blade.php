@@ -38,6 +38,7 @@
 
 
 
+<div class="m"><b>{{$message}}</b></div>
 
 
 
