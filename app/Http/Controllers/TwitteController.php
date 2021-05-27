@@ -19,7 +19,7 @@ class TwitteController extends Controller
         $twitte = new twitte;
          if("pubblico"==$dati['tipo']){ $twitte->tipo=0;}
          else{$twitte->tipo=1;}
-         if(strlen ( $dati['text'] )>20){
+         if(strlen ( $dati['text'] )>254){
             $message='Inserisci un twitte non superiore ai 254 caratteri';
             return redirect('home2')->with($message);
          }

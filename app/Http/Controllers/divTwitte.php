@@ -19,18 +19,19 @@ class divTwitte extends Controller
      $twitte3 = DB::select('SELECT t.id, t.text,t.imm, t.data,t.titolo,t.utente,u.nomeUtente, p.utente  as "ut" ,p.id as"id2", count(p.id) as "contaCuori"
       FROM twitte t join utente u on t.utente=u.id 
      LEFT OUTER JOIN miPiace p on t.id=p.twitte   where t.tipo <>3  and u.stato=1 or t.tipo=0 group by (t.id)  order by (t.data)desc');
-   
- 
-     $twitte=array_merge($twitte1,$twitte3); 
-
-     
+     }
+     catch (Exception $e){ return redirect('/divtwitte');}
+     try{
+     $twitte=array_merge($twitte1,$twitte3); }
+     catch (Exception $e){ return redirect('/divtwitte');}
+     try{
      $utente = DB::select('SELECT * from utente where stato=1');
      foreach($utente as $utentes){$idUtente=$utentes->id;} 
      $mipiace=DB::select("SELECT * from mipiace p where p.utente=$idUtente ");
      $mipiaceTot=DB::select("SELECT count(p.id) as 'ContaCuore', p.twitte from mipiace p group by(p.twitte) ");
         
         return view('Twitte',['twitte'=> $twitte ,'utente'=>$utente, 'mipiace'=> $mipiace,'mipiaceTot'=> $mipiaceTot]);
-        }
-        catch (Exception $e){ return redirect('/divtwitte');}
+    }
+    catch (Exception $e){ return redirect('/divtwitte');}
     }
 }
